@@ -21,4 +21,5 @@ https://raw.githubusercontent.com/lvgl/lv_nuttx/master/manifests/stm32f746g-disc
 https://raw.githubusercontent.com/lvgl/lv_nuttx/master/manifests/stm32h745i-disco.json
 https://raw.githubusercontent.com/lvgl/lv_nuttx/master/manifests/waveshare-rp2040-lcd-1.28.json
 https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/imxrt1170-evk.json
+https://raw.githubusercontent.com/lvgl/lv_port_nxp_imxrt1170-evkb/master/manifests/imxrt1170-evkb.json
 https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/m5stack_core2.json
