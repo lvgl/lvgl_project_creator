@@ -975,5 +975,62 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "LV Port FRDM-MCXN947",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "make",
+            "cmake",
+            "Linux"
+        ],
+        "hardware": {
+            "chipVendor": "NXP",
+            "manufacturer": "NXP",
+            "specs": {
+                "MCU": "MCXN-947",
+                "RAM": "512 KB SRAM",
+                "Flash": "2 MB",
+                "GPU": "None",
+                "Resolution": "480x320",
+                "Display Size": "3.5\u201d",
+                "Interface": "SPI",
+                "Color Depth": "16-bit",
+                "Technology": "LCD",
+                "DPI": "128 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The NXP FRDM-MCXN947 is a devboard with an optional LCD add-on board. This option creates a MCU Expresso with LVGL for FRDM-MCXN947 and a basic directory structure for your custom LVGL app.",
+        "shortDescription": "FRDM-MCXN947 MCU expresso project with LVGL support",
+        "urlToClone": "https://github.com/lvgl/lv_port_nxp_frdm_mcxn947",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
     }
 ]
