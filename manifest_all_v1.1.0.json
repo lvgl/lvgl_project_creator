@@ -1036,5 +1036,109 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Alif E7 AI/ML AppKit",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows"
+        ],
+        "environment": [
+            "VS Code",
+            "Arm CMSIS Solution"
+        ],
+        "hardware": {
+            "chipVendor": "Alif Semiconductor",
+            "manufacturer": "Alif Semiconductor",
+            "specs": {
+                "MCU": "dual Cortex-M55 - 400 MHz, 160 MHz",
+                "RAM": "13.5 internal SRAM, 64 MB external PSRAM",
+                "Flash": "64 MB",
+                "GPU": "DAVE2D",
+                "Resolution": "800x480",
+                "Display Size": "4\u201d",
+                "Interface": "MIPI LCD",
+                "Color Depth": "16-bit",
+                "DPI": "216 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The E7 AI/ML AppKit is a peripheral-rich board with the most powerful Alif Ensemble SOC. It has two MCU cores. One is highly performant while the other is highly efficient. The desired core can be selected in VS Code. There is builtin AI/ML hardware and another pair of cores that can run an OS like Linux. The board features WiFi, BLE, a camera, multiple microphones, a headphone connector, an IMU, navigation buttons, and USB.",
+        "shortDescription": "A VS Code project for Alif E7 AI/ML AppKit with LVGL",
+        "urlToClone": "https://github.com/lvgl/lv_alif.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/alif/logo.svg"
+        ],
+        "branches": [
+            "release/v9.1"
+        ],
+        "getStartedInstructions": "Follow the detailed instructions at `https://docs.lvgl.io/master/details/integration/chip/alif.html` to get started.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Board Variant",
+                "options": [
+                    {
+                        "name": "Development Kit gen 1, silicon rev A, board rev B/C",
+                        "value": "0"
+                    },
+                    {
+                        "name": "AI/ML Application Kit gen 1, silicon rev A, board rev A",
+                        "value": "1"
+                    },
+                    {
+                        "name": "AI/ML Application Kit gen 1, silicon rev A, board rev B",
+                        "value": "2"
+                    },
+                    {
+                        "name": "Development Kit gen 2, silicon rev B, internal CoB board",
+                        "value": "3"
+                    },
+                    {
+                        "name": "Development Kit gen 2, silicon rev B, board rev A/B/C",
+                        "value": "4",
+                        "default": "true"
+                    },
+                    {
+                        "name": "AI/ML Application gen 2, silicon rev B, board rev A",
+                        "value": "5"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": "#define BOARD_ALIF_DEVKIT_VARIANT\\s+\\d+",
+                        "newContent": "#define BOARD_ALIF_DEVKIT_VARIANT {value}",
+                        "filePath": "app/board.h"
+                    }
+                ]
+            },
+            {
+                "type": "dropdown",
+                "label": "Panel Variant (if unsure, leave default)",
+                "options": [
+                    {
+                        "name": "E43RB_FW405",
+                        "value": "0",
+                        "default": "true"
+                    },
+                    {
+                        "name": "E43GB_MW405",
+                        "value": "1"
+                    },
+                    {
+                        "name": "E50RA_MW550",
+                        "value": "2"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": "#define BOARD_ILI9806E_PANEL_VARIANT\\s+\\d+",
+                        "newContent": "#define BOARD_ILI9806E_PANEL_VARIANT {value}",
+                        "filePath": "app/board.h"
+                    }
+                ]
+            }
+        ]
     }
 ]
