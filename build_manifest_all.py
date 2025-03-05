@@ -114,6 +114,10 @@ def validate_json(json_data, schema):
 
 # Function to fetch JSON content from a URL
 def fetch_json(url):
+    if url.startswith("file://"):
+        # for local testing
+        with open(url[len("file://"):]) as f:
+            return json.load(f)
     response = requests.get(url)
     response.raise_for_status()  # Raise an exception for HTTP errors
     return response.json()
@@ -124,6 +128,8 @@ all_json_data = []
 # Read the file containing URLs to JSON files
 with open('manifests', 'r') as file:
     urls = file.readlines()
+
+valid = True
 
 # Fetch and concatenate JSON data from each URL
 for url in urls:
@@ -136,14 +142,16 @@ for url in urls:
             all_json_data.append(json_data)  # Append if valid
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {url}: {e}")
+            valid = False
         except ValidationError as e:
             print(f"Validation failed for {url}: {e.message}")
+            valid = False
 
 
 print("Validating the concatenated JSON")
-valid = validate_json(all_json_data, schema_whole)
+concat_valid = validate_json(all_json_data, schema_whole)
 filename = "manifest_all_v1.1.0.json"
-if valid:
+if concat_valid:
     # Save the concatenated JSON data to a new file
     with open(filename, 'w') as outfile:
         json.dump(all_json_data, outfile, indent=4)
@@ -151,3 +159,7 @@ if valid:
     print(f"All JSON data has been concatenated and saved to {filename}.")
 else:
     print("Error: the concatenated JSON is invalid") 
+    valid = False
+
+if not valid:
+    exit(1)
