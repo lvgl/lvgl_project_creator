@@ -8,6 +8,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    branches:
+      - master
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -39,18 +42,21 @@ jobs:
 
       # Configure Git
       - name: Configure Git
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       # Commit the changes if there are any
       - name: Commit changes
+        if: github.event_name == 'push'
         run: |
           git add .
           git diff-index --quiet HEAD || git commit -m "Update manifest_all.json"
 
       # Push changes back to the repository
       - name: Push changes
+        if: github.event_name == 'push'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
