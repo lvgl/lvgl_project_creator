@@ -42,21 +42,21 @@ jobs:
 
       # Configure Git
       - name: Configure Git
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       # Commit the changes if there are any
       - name: Commit changes
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git add .
           git diff-index --quiet HEAD || git commit -m "Update manifest_all.json"
 
       # Push changes back to the repository
       - name: Push changes
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
