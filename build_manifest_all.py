@@ -49,6 +49,8 @@ schema_individual = {
             "type": "array",
             "items": {"type": "string"}
         },
+        "image": {"type": "string"},
+        "buy_now_link": {"type": "string"},
         "branches": {
             "type": "array",
             "items": {"type": "string"}
