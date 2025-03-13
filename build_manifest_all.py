@@ -92,7 +92,7 @@ schema_individual = {
             }
         }
     },
-    "required": ["name", "maintainer", "hostOperatingsystem", "environment", "description", "shortDescription", "urlToClone", "logos", "branches", "settings"]
+    "required": ["name", "maintainer", "hostOperatingsystem", "environment", "description", "shortDescription", "urlToClone", "logos", "image", "branches", "settings"]
 }
 
 schema_whole = {
