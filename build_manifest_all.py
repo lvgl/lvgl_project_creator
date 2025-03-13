@@ -50,7 +50,10 @@ schema_individual = {
             "items": {"type": "string"}
         },
         "image": {"type": "string"},
-        "buy_now_link": {"type": "string"},
+        "buy_now_links": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
         "branches": {
             "type": "array",
             "items": {"type": "string"}
