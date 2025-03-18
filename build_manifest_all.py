@@ -124,17 +124,18 @@ def validate_json(json_data, schema):
         else:
             print("Error location: Root of the document")
         return False
-    try:
-        ensure_link_valid(json_data["urlToClone"])
-        for logo_link in json_data["logos"]:
-            ensure_link_valid(logo_link)
-        ensure_link_valid(json_data["image"])
-        buy_now_link = json_data.get("buy_now_link")
-        if buy_now_link is not None:
-            ensure_link_valid(buy_now_link)
-    except requests.exceptions.RequestException as e:
-        print(f"Error checking manifest link {e.request.url}: {e}")
-        return False
+    if schema is schema_individual:
+        try:
+            ensure_link_valid(json_data["urlToClone"])
+            for logo_link in json_data["logos"]:
+                ensure_link_valid(logo_link)
+            ensure_link_valid(json_data["image"])
+            buy_now_link = json_data.get("buy_now_link")
+            if buy_now_link is not None:
+                ensure_link_valid(buy_now_link)
+        except requests.exceptions.RequestException as e:
+            print(f"Error checking manifest link {e.request.url}: {e}")
+            return False
     return True
 
 # Function to fetch JSON content from a URL
