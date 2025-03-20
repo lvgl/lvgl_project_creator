@@ -1712,6 +1712,10 @@
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/zephyr/logo.svg"
         ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_actions_technology/master/board_images/ats3089p-evb.webp",
+        "buy_now_links": [
+            "https://www.actionstech.com/index.php?id=contactus"
+        ],
         "branches": [
             "release/v9.2"
         ],
