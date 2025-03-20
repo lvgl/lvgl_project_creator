@@ -49,6 +49,11 @@ schema_individual = {
             "type": "array",
             "items": {"type": "string"}
         },
+        "image": {"type": "string"},
+        "buy_now_links": {
+            "type": "array",
+            "items": {"type": "string"}
+        },
         "branches": {
             "type": "array",
             "items": {"type": "string"}
@@ -90,7 +95,7 @@ schema_individual = {
             }
         }
     },
-    "required": ["name", "maintainer", "hostOperatingsystem", "environment", "description", "shortDescription", "urlToClone", "logos", "branches", "settings"]
+    "required": ["name", "maintainer", "hostOperatingsystem", "environment", "description", "shortDescription", "urlToClone", "logos", "image", "branches", "settings"]
 }
 
 schema_whole = {
@@ -98,12 +103,20 @@ schema_whole = {
     "items": schema_individual
 }
 
+valid_links = set()
+
+def ensure_link_valid(link):
+    if link in valid_links:
+        return
+    response = requests.head(link) # Use the HEAD method to test for existence
+    response.raise_for_status() # Raise an exception for HTTP errors
+    valid_links.add(link) # cache status for duplicates
+
 # Function to validate JSON against the schema
 def validate_json(json_data, schema):
     try:
         validate(instance=json_data, schema=schema)
         print("JSON is valid")
-        return True
     except ValidationError as e:
         print(f"JSON validation error: {e.message}")
         if e.path:
@@ -111,6 +124,19 @@ def validate_json(json_data, schema):
         else:
             print("Error location: Root of the document")
         return False
+    if schema is schema_individual:
+        try:
+            ensure_link_valid(json_data["urlToClone"])
+            for logo_link in json_data["logos"]:
+                ensure_link_valid(logo_link)
+            ensure_link_valid(json_data["image"])
+            buy_now_link = json_data.get("buy_now_link")
+            if buy_now_link is not None:
+                ensure_link_valid(buy_now_link)
+        except requests.exceptions.RequestException as e:
+            print(f"Error checking manifest link {e.request.url}: {e}")
+            return False
+    return True
 
 # Function to fetch JSON content from a URL
 def fetch_json(url):
@@ -138,14 +164,16 @@ for url in urls:
         print(f"Fetching {url}")
         try:
             json_data = fetch_json(url)
-            validate_json(json_data, schema_individual)  # Validate each JSON fetched
-            all_json_data.append(json_data)  # Append if valid
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {url}: {e}")
             valid = False
-        except ValidationError as e:
-            print(f"Validation failed for {url}: {e.message}")
+            continue
+        this_json_valid = validate_json(json_data, schema_individual)  # Validate each JSON fetched
+        if not this_json_valid:
+            print(f"Validation failed for {url}")
             valid = False
+            continue
+        all_json_data.append(json_data)  # Append if valid
 
 
 print("Validating the concatenated JSON")
