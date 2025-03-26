@@ -2,6 +2,8 @@ https://raw.githubusercontent.com/lvgl/lv_port_linux/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_pc_eclipse/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_pc_vscode/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek-ra8d1_gcc/master/manifest.json
+https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek-ra6m3g/master/manifest.json
+https://raw.githubusercontent.com/lvgl/lv_port_renesas_rx72n-envision-kit/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_esp_idf/master/manifests/esp32-s3-eye.json
 https://raw.githubusercontent.com/lvgl/lv_esp_idf/master/manifests/esp32_s3_korvo_2.json
 https://raw.githubusercontent.com/lvgl/lv_esp_idf/master/manifests/esp32_s3_lcd_ev_board.json
