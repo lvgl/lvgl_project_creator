@@ -372,6 +372,94 @@
         ]
     },
     {
+        "name": "Renesas RA6M3G-EK",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "e2 studio",
+            "GCC"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "Renesas",
+            "specs": {
+                "MCU": "R7FA6M3AH3CFC (Cortex-M4, 120MHz)",
+                "RAM": "640kB internal SRAM",
+                "Flash": "2MB internal, 32MB external QSPI Flash",
+                "GPU": "Dave2D",
+                "Resolution": "480x272",
+                "Display Size": "4.3\u201d",
+                "Interface": "Parallel RGB",
+                "Color Depth": "RGB565",
+                "Technology": "TFT-LCD, Transmissive",
+                "DPI": "128 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The EK-RA6M3G evaluation kit enables users to seamlessly evaluate the features of the RA6M3 MCU Group and develop embedded systems applications using Renesas\u2019 Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.\n\nThe MCU has a high-performance Arm Cortex-M4 core and offers a TFT controller with 2D accelerator and JPEG decoder. Additionally, it has Ethernet MAC with individual DMA and USB high-speed interface to ensure high data throughput",
+        "shortDescription": "Cortex-M4 based 120 MHz MCU driving a 480x272 display.",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek-ra6m3g/master/board_images/renesas-EK-RA6M3G.webp",
+        "buy_now_links": [
+            "https://renesas.com/ek-ra6m3g"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "settings": []
+    },
+    {
+        "name": "Renesas RX72N Envision Kit",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "e2 studio",
+            "GCC"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "Renesas",
+            "specs": {
+                "MCU": "R5F572NNHDFB (RXv3, 240MHz)",
+                "RAM": "1MB internal SRAM",
+                "Flash": "4MB internal, 32MB external QSPI Flash",
+                "GPU": "Dave2D",
+                "Resolution": "480x272",
+                "Display Size": "4.3\u201d",
+                "Interface": "Parallel RGB",
+                "Color Depth": "RGB565",
+                "Technology": "TFT-LCD, Transmissive",
+                "DPI": "128 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "Equipped with 32-bit microcomputer, RX family flagship RX72N is an excellent choice for GUI creation using LCD, HMI development such as voice input/output, and IoT device development using Wi-Fi, BLE or Ethernet. By using LVGL's demo repository with Renesas' ecosystem, you can experience immediately and develop quickly. The IC is equipped with the third-generation RX CPU core, the RXv3, and an internal networking of peripheral allowing real-time control high-performance with a single chip. The device also has complete security capability, vital for industrial and consumer equipment today.",
+        "shortDescription": "240 MHz driving a 480x272 display.",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_rx72n-envision-kit/master/board_images/renesas-rx72n-envision-kit.webp",
+        "buy_now_links": [
+            "https://renesas.com/rx72n-envision-kit"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "settings": []
+    },
+    {
         "name": "ESP32-S3-EYE",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
