@@ -2073,7 +2073,7 @@
         "settings": []
     },
     {
-        "name": "TI SK-AM62B-P1",
+        "name": "Texas Instruments SK-AM62B-P1",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
             "Linux"
@@ -2083,8 +2083,8 @@
             "Buildroot"
         ],
         "hardware": {
-            "chipVendor": "TI",
-            "manufacturer": "TI",
+            "chipVendor": "Texas Instruments",
+            "manufacturer": "Texas Instruments",
             "specs": {
                 "MPU": "AM625 with Quad 64-bit Arm\u00ae Cortex\u00ae-A53 @1.4GHz",
                 "MCU": "Arm\u00ae Cortex\u00ae-M4F MCU",
@@ -2110,7 +2110,7 @@
         "settings": []
     },
     {
-        "name": "TI SK-AM62P-LP",
+        "name": "Texas Instruments SK-AM62P-LP",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
             "Linux"
@@ -2120,8 +2120,8 @@
             "Buildroot"
         ],
         "hardware": {
-            "chipVendor": "TI",
-            "manufacturer": "TI",
+            "chipVendor": "Texas Instruments",
+            "manufacturer": "Texas Instruments",
             "specs": {
                 "MPU": "AM625P with Quad 64-bit Arm\u00ae Cortex\u00ae-A53 @1.4GHz",
                 "MCU": "two ARM\u00ae Cortex\u00ae-R5F single core up to 800MHz",
