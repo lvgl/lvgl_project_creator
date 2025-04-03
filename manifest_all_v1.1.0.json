@@ -2181,5 +2181,209 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_nxp_imx93#getting-started)",
         "settings": []
+    },
+    {
+        "name": "Riverdi STM32U5 Embedded 5\u201d",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "CubeIDE"
+        ],
+        "hardware": {
+            "chipVendor": "STM32",
+            "manufacturer": "Riverdi",
+            "specs": {
+                "MCU": "STM32U599NJH6Q/STM32U5A9NJH6Q  (Cotex-M33, 160MHz)",
+                "RAM": "2.5MB (internal only)",
+                "Flash": "4MB (internal only)",
+                "GPU": "Neo-Chrom (GPU2D), Chrom-Art (DMA2D), Chrom-GRC (GFXMMU)",
+                "Resolution": "800x480",
+                "Display Size": "5.0\u201d",
+                "Interface": "RGB LCD",
+                "Color Depth": "24-bit",
+                "DPI": "166 px/inch",
+                "Technology": "IPS",
+                "Touch Pad": " Projected Capacitive"
+            }
+        },
+        "description": "STM32 Embedded 5\u201d display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The 5-inch STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32U599NJH6Q or STM32U5A9NJH6Q microcontroller. It has been designed in a way that allows to meet most of the hardware and programming challenges faced by engineers, including access to all interfaces.",
+        "shortDescription": "STM32U5 with NeoChrome on a 800x480 screen.",
+        "urlToClone": "https://github.com/lvgl/lv_port_riverdi_stm32u5.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg",
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/riverdi/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_riverdi_stm32u5/master/board_images/riverdi-stmu5.webp",
+        "buy_now_links": [
+            "https://riverdi.com/product/5-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32u5-rvt50hqsnwc00-b"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Connect a 6-48V power supply to the POWER header on the board using the supplied cable. \n2. Connect a debug probe to the SWD header using the supplied cable.\n 3. Install [STM32 CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)\n4. Open STM32CubeIDE and import project:` File => Open Projects from File System... => Directory => Select the \"STM32CubeIde\" folder => Finish`\n5. Click the Run button to flash the project",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_PERF_MONITOR .*",
+                        "newContent": "    #define LV_USE_PERF_MONITOR {value}",
+                        "filePath": "Middlewares/Third_Party/LVGL/lv_conf.h"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Riverdi STM32H7 Embedded 7\u201d",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "CubeIDE"
+        ],
+        "hardware": {
+            "chipVendor": "STM32",
+            "manufacturer": "Riverdi",
+            "specs": {
+                "MCU": "STM32H757XIH6  (Cortex-M7 480MHz, Cortex-M4 240MHz)",
+                "RAM": "8MB external, 1MB internal",
+                "Flash": "64MB external, 2MB internal",
+                "GPU": "Chrom-Art (DMA2D)",
+                "Resolution": "1024x600",
+                "Display Size": "7.0\u201d",
+                "Interface": "RGB LCD",
+                "Color Depth": "24-bit",
+                "DPI": "170 px/inch",
+                "Technology": "IPS TFT",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "STM32 Embedded 7\u201d display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The 7-inch STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32H757XIH6 microcontroller. It has been designed in a way that allows to meet most of the hardware and programming challenges faced by engineers, including access to all interfaces.",
+        "shortDescription": "STM32H7 on a 1024x600 screen.",
+        "urlToClone": "https://github.com/lvgl/lv_port_riverdi_70-stm32h7.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg",
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/riverdi/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_riverdi_70-stm32h7/master/board_images/riverdi-7-inch-STM32.webp",
+        "buy_now_links": [
+            "https://riverdi.com/product/7-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32h7-rvt70hssnwc00-b"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Connect a 6-48V power supply to the POWER header on the board using the supplied cable. \n2. Connect a debug probe to the SWD header using the supplied cable.\n 3. Install [STM32 CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)\n4. Open STM32CubeIDE and import project:` File => Open Projects from File System... => Directory => Select the \"STM32CubeIde\" folder => Finish`\n5. Click the Run button to flash the project",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_PERF_MONITOR .*",
+                        "newContent": "    #define LV_USE_PERF_MONITOR {value}",
+                        "filePath": "Middlewares/Third_Party/LVGL/lv_conf.h"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Riverdi STM32H7 Embedded 10.1\u201d",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "CubeIDE"
+        ],
+        "hardware": {
+            "chipVendor": "STM32",
+            "manufacturer": "Riverdi",
+            "specs": {
+                "MCU": "STM32H757XIH6  (Cortex-M7 480MHz, Cortex-M4 240MHz)",
+                "RAM": "8MB external, 1MB internal",
+                "Flash": "64MB external, 2MB internal",
+                "GPU": "Chrom-Art (DMA2D)",
+                "Resolution": "1080x800",
+                "Display Size": "10.1\u201d",
+                "Interface": "RGB LCD",
+                "Color Depth": "24-bit",
+                "DPI": "133 px/inch",
+                "Technology": "IPS TFT",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "STM32 Embedded 10.1\u201d display is all-in-one complete and open-platform solution being able to independently handle the visual layer of devices with the need for high computing performance. The 10.1-inch STM32 Embedded Displays series are industrial-quality LCD-TFT solutions based on the STM32H757XIH6 microcontroller. It has been designed in a way that allows to meet most of the hardware and programming challenges faced by engineers, including access to all interfaces.",
+        "shortDescription": "STM32H7 on a 1080x800 screen.",
+        "urlToClone": "https://github.com/lvgl/lv_port_riverdi_101-stm32h7.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg",
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/riverdi/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_riverdi_101-stm32h7/refs/heads/master/board_images/riverdi-10.1-inch-STM32.webp",
+        "buy_now_links": [
+            "https://riverdi.com/product/10-1-inch-lcd-display-capacitive-touch-panel-optical-bonding-uxtouch-stm32h7-rvt101hvsnwc00-b"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Connect a 6-48V power supply to the POWER header on the board using the supplied cable. \n2. Connect a debug probe to the SWD header using the supplied cable.\n 3. Install [STM32 CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)\n4. Open STM32CubeIDE and import project:` File => Open Projects from File System... => Directory => Select the \"STM32CubeIde\" folder => Finish`\n5. Click the Run button to flash the project",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_PERF_MONITOR .*",
+                        "newContent": "    #define LV_USE_PERF_MONITOR {value}",
+                        "filePath": "Middlewares/Third_Party/LVGL/lv_conf.h"
+                    }
+                ]
+            }
+        ]
     }
 ]
