@@ -37,7 +37,7 @@ schema_individual = {
                         "DPI": {"type": "string"},
                         "Touch Pad": {"type": "string"}
                     },
-                    "required": ["MCU", "RAM", "Flash"]
+                    "required": ["RAM", "Flash"]
                 }
             },
             "required": ["chipVendor", "manufacturer", "specs"]
