@@ -2385,5 +2385,61 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Viewe ESP32 S3 Smart Display",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "ESP-IDF"
+        ],
+        "hardware": {
+            "chipVendor": "Espressif",
+            "manufacturer": "Viewe Display",
+            "specs": {
+                "MCU": "ESP32-S3 (240MHz)",
+                "RAM": "512 KB (internal), 8MB (external)",
+                "Flash": "16 MB",
+                "GPU": "None",
+                "Resolution": "800x480",
+                "Display Size": "7.0\u201d",
+                "Interface": "RGB LCD",
+                "Color Depth": "24-bit",
+                "Technology": "TN",
+                "DPI": "133 px/inch",
+                "Touch Pad": "Capacitive (GT911)"
+            }
+        },
+        "description": "The Viewe ESP32 S3 Smart Display, designed and developed by Viewe Display, features an 800\u00d7480 resolution with 300 cd/m\u00b2 brightness and multi-point capacitive touch. Powered by an ESP32-S3 (240MHz) with 8MB RAM and 16MB Flash, it supports Wi-Fi, BLE 5, and BLE Mesh. Designed for Arduino, ESP-IDF, and LVGL platforms, it offers UART and USB interfaces for versatile IoT and AIoT applications.",
+        "shortDescription": "Viewe ESP32 S3 Smart Display project with LVGL support",
+        "urlToClone": "https://github.com/lvgl/lv_port_viewe_7_espidf",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/espressif/logo.svg"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_viewe_7_espidf/master/board_images/board.png",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
     }
 ]
