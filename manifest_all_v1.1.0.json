@@ -2441,5 +2441,67 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Renesas RZ/G2L-EVKIT",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "make"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "Renesas",
+            "specs": {
+                "MPU": "Arm Cortex-A55 (1.2 GHz)",
+                "RAM": "2GB DDR4 SDRAM",
+                "Flash": "Micro SD card, 64GB eMMC, 64MB QSPI flash",
+                "GPU": "Arm Mali-G31 (has 3D acceleration)",
+                "Interface": "Micro-HDMI",
+                "Touch Pad": "USB touch input"
+            }
+        },
+        "description": "The Renesas RZ/G2L is a general-purpose MPU with a Cortex-A55 (1.2 GHz) and a 3D GPU with video codecs. The RZ/G2L in this evaluation kit is on a SoM, which itself is on a carrier board. The carrier board features IO useful for MPU applications such as Micro-HDMI, 2 ethernet ports, headphone and microphone jacks, USB serial terminal, USB host, camera input, an additional Micro SD card slot, and exposed GPIO headers.",
+        "shortDescription": "Renesas RZ/G2L general-purpose SoM and carrier board with peripherals.",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas_rz-g2l-evkit.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_rz-g2l-evkit/master/board_images/board.webp",
+        "buy_now_links": [
+            "https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/rzg2l-evkit-evaluation-board-kit-rzg2l-mpu",
+            "https://www.mouser.com/ProductDetail/Renesas-Electronics/RTK9744L23S01000BE?qs=7D1LtPJG0i2Uv%2FGoPVv6xw%3D%3D",
+            "https://www.digikey.com/en/products/detail/renesas-electronics-corporation/RTK9744L23S01000BE/15290121"
+        ],
+        "branches": [
+            "v8.3-with-v9-benchmark"
+        ],
+        "getStartedInstructions": "Follow the instructions in README.md to set up the board, install the cross-compile toolchain, and build the demo. Also refer to [the official guide](https://renesas-rz.github.io/rzg_hmi_sdk/latest/getting_started/) for additional info",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_PERF_MONITOR .*",
+                        "newContent": "    #define LV_USE_PERF_MONITOR {value}",
+                        "filePath": "lv_conf.h"
+                    }
+                ]
+            }
+        ]
     }
 ]
