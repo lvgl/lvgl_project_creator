@@ -402,7 +402,7 @@
         },
         "description": "The EK-RA6M3G evaluation kit enables users to seamlessly evaluate the features of the RA6M3 MCU Group and develop embedded systems applications using Renesas\u2019 Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.\n\nThe MCU has a high-performance Arm Cortex-M4 core and offers a TFT controller with 2D accelerator and JPEG decoder. Additionally, it has Ethernet MAC with individual DMA and USB high-speed interface to ensure high data throughput",
         "shortDescription": "Cortex-M4 based 120 MHz MCU driving a 480x272 display.",
-        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra6m3g",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
         ],
@@ -446,7 +446,7 @@
         },
         "description": "Equipped with 32-bit microcomputer, RX family flagship RX72N is an excellent choice for GUI creation using LCD, HMI development such as voice input/output, and IoT device development using Wi-Fi, BLE or Ethernet. By using LVGL's demo repository with Renesas' ecosystem, you can experience immediately and develop quickly. The IC is equipped with the third-generation RX CPU core, the RXv3, and an internal networking of peripheral allowing real-time control high-performance with a single chip. The device also has complete security capability, vital for industrial and consumer equipment today.",
         "shortDescription": "240 MHz driving a 480x272 display.",
-        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas_rx72n-envision-kit",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
         ],
