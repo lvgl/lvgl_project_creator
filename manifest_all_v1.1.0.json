@@ -1451,8 +1451,8 @@
             "Linux"
         ],
         "hardware": {
-            "chipVendor": "STMicroelectronics",
-            "manufacturer": "STMicroelectronics",
+            "chipVendor": "ST",
+            "manufacturer": "ST",
             "specs": {
                 "MCU": "STM32F429ZI",
                 "RAM": "256 KB internal SRAM, 8 MB external SDRAM",
@@ -1503,8 +1503,8 @@
             "Linux"
         ],
         "hardware": {
-            "chipVendor": "STMicroelectronics",
-            "manufacturer": "STMicroelectronics",
+            "chipVendor": "ST",
+            "manufacturer": "ST",
             "specs": {
                 "MCU": "STM32F746NG",
                 "RAM": "340 KB internal SRAM, 8 MB external SDRAM",
@@ -1555,8 +1555,8 @@
             "Linux"
         ],
         "hardware": {
-            "chipVendor": "STMicroelectronics",
-            "manufacturer": "STMicroelectronics",
+            "chipVendor": "ST",
+            "manufacturer": "ST",
             "specs": {
                 "MCU": "STM32H745XI",
                 "RAM": "1 MB internal SRAM, 8 MB external SDRAM",
@@ -2194,7 +2194,7 @@
             "CubeIDE"
         ],
         "hardware": {
-            "chipVendor": "STM32",
+            "chipVendor": "ST",
             "manufacturer": "Riverdi",
             "specs": {
                 "MCU": "STM32U599NJH6Q/STM32U5A9NJH6Q  (Cotex-M33, 160MHz)",
@@ -2262,7 +2262,7 @@
             "CubeIDE"
         ],
         "hardware": {
-            "chipVendor": "STM32",
+            "chipVendor": "ST",
             "manufacturer": "Riverdi",
             "specs": {
                 "MCU": "STM32H757XIH6  (Cortex-M7 480MHz, Cortex-M4 240MHz)",
@@ -2330,7 +2330,7 @@
             "CubeIDE"
         ],
         "hardware": {
-            "chipVendor": "STM32",
+            "chipVendor": "ST",
             "manufacturer": "Riverdi",
             "specs": {
                 "MCU": "STM32H757XIH6  (Cortex-M7 480MHz, Cortex-M4 240MHz)",
@@ -2399,7 +2399,7 @@
         ],
         "hardware": {
             "chipVendor": "Espressif",
-            "manufacturer": "Viewe Display",
+            "manufacturer": "Viewe",
             "specs": {
                 "MCU": "ESP32-S3 (240MHz)",
                 "RAM": "512 KB (internal), 8MB (external)",
@@ -2424,6 +2424,9 @@
             "release/v9.2"
         ],
         "image": "https://raw.githubusercontent.com/lvgl/lv_port_viewe_7_espidf/master/board_images/board.png",
+        "buy_now_links": [
+            "https://viewedisplay.com/iot_aiot-smart-display/"
+        ],
         "settings": [
             {
                 "type": "dropdown",
