@@ -1658,7 +1658,7 @@
             "MacOS"
         ],
         "environment": [
-            "cmake",
+            "CMake",
             "Linux"
         ],
         "hardware": {
@@ -1716,7 +1716,7 @@
             "MacOS"
         ],
         "environment": [
-            "cmake",
+            "CMake",
             "Linux"
         ],
         "hardware": {
@@ -1774,7 +1774,7 @@
         ],
         "environment": [
             "make",
-            "cmake",
+            "CMake",
             "Linux"
         ],
         "hardware": {
@@ -1834,9 +1834,7 @@
             "MacOS"
         ],
         "environment": [
-            "make",
-            "cmake",
-            "Linux"
+            "MCUXpresso"
         ],
         "hardware": {
             "chipVendor": "NXP",
