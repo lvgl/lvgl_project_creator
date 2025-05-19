@@ -2,6 +2,7 @@
 
 import json
 import requests
+import time
 from jsonschema import validate, ValidationError
 
 schema_individual = {
@@ -163,6 +164,7 @@ for url in urls:
     if url:  # Ensure the URL is not empty
         print(f"Fetching {url}")
         try:
+            time.sleep(1) #Little sleep to avoid rate limitation
             json_data = fetch_json(url)
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {url}: {e}")
