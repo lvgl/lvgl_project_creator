@@ -38,6 +38,8 @@ jobs:
 
       # Run the Python script
       - name: Run the JSON concatenation script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         run: python build_manifest_all.py
 
       # Configure Git

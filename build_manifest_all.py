@@ -2,7 +2,7 @@
 
 import json
 import requests
-import time
+import os
 from jsonschema import validate, ValidationError
 
 schema_individual = {
@@ -104,12 +104,19 @@ schema_whole = {
     "items": schema_individual
 }
 
+headers = {} # Never print the headers as it contains a token which must not be displayed in CI logs.
+bearer_token = os.environ.get("GITHUB_TOKEN")
+if bearer_token is not None:
+    headers["Authorization"] = f"Bearer {bearer_token}"
+else:
+    print("warning: no GITHUB_TOKEN in env. request limit may be exceeded")
+
 valid_links = set()
 
 def ensure_link_valid(link):
     if link in valid_links:
         return
-    response = requests.head(link) # Use the HEAD method to test for existence
+    response = requests.head(link, headers=headers) # Use the HEAD method to test for existence
     response.raise_for_status() # Raise an exception for HTTP errors
     valid_links.add(link) # cache status for duplicates
 
@@ -145,7 +152,7 @@ def fetch_json(url):
         # for local testing
         with open(url[len("file://"):]) as f:
             return json.load(f)
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
     response.raise_for_status()  # Raise an exception for HTTP errors
     return response.json()
 
@@ -164,7 +171,6 @@ for url in urls:
     if url:  # Ensure the URL is not empty
         print(f"Fetching {url}")
         try:
-            time.sleep(1) #Little sleep to avoid rate limitation
             json_data = fetch_json(url)
         except requests.exceptions.RequestException as e:
             print(f"Error fetching {url}: {e}")
