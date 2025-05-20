@@ -483,12 +483,14 @@
         },
         "description": "The Renesas EK-RZ/A3M board is an evaluation kit for the RZ/A3M MPU. It is an MPU but it has a focus on baremetal and RTOS applications. It boasts a mighty 1 GHz Cortex-A55 CPU and 128 MB of DDR3L-SDRAM. It is easy to use the low-level IO, of which it provides a lot. The board offers connectivity to many ecosystems like Arduino, Qwiic, Grove, mikroBUS, and Pmod. A 1280x720 display is included in the kit. It mounts to the board via a board-to-board connector.",
         "shortDescription": "Renesas RZ/G2UL high performance baremetal MPU with abundant IO and peripherals",
-        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-rz-a3m.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas-ek-rz_a3m.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
         ],
         "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas-ek-rz_a3m/master/board_images/renesas-RZ-A3M.webp",
-        "buy_now_links": [],
+        "buy_now_links": [
+            "https://www.renesas.com/en/products/microcontrollers-microprocessors/rz-mpus/ek-rza3m-evaluation-kit-rza3m-mpu"
+        ],
         "branches": [
             "release/v9.2"
         ],
