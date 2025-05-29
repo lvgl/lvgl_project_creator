@@ -2626,5 +2626,44 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "iCOP QEC-PPC-M-090T",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Windows"
+        ],
+        "environment": [
+            "Arduino"
+        ],
+        "hardware": {
+            "chipVendor": "DM&P Electronics",
+            "manufacturer": "iCOP",
+            "specs": {
+                "CPU": "533 MHz Vortex86EX2 32-bit x86 CPU",
+                "RAM": "512MB/1GB DDR3",
+                "Flash": "2GB SLC eMMC, 32MB SPI Flash",
+                "Resolution": "1024x600",
+                "Display Size": "9\u201d",
+                "Interface": "VGA",
+                "Color Depth": "16-bit",
+                "Technology": "TFT",
+                "DPI": "132 px/inch",
+                "Touch Pad": "Resistive"
+            }
+        },
+        "description": "The iCOP QEC-PPC-M-090T is a capable, fully-featured industrial HMI. It has a specialized 533 MHz (plus a 400 MHz core) 32-bit x86 CPU. The programming environment is Arduino. The fusion of the mature x86 architecture with the Arduino ecosystem opens up powerful application opportunities. There is a separate dedicated core for EtherCAT.",
+        "shortDescription": "iCOP QEC-PPC-M-090T Arduino industrial HMI.",
+        "urlToClone": "https://github.com/lvgl/lv_port_icop_qec_ppc_m_090t.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/icop/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_icop_qec_ppc_m_090t/refs/heads/master/board_images/iCOP_QEC-PPC-M-090T.webp",
+        "buy_now_links": [],
+        "branches": [
+            "v9.2"
+        ],
+        "getStartedInstructions": "Follow the instructions in README.md to set up the device, install the 86Duino IDE and libraries, and upload the program.",
+        "settings": []
     }
 ]
