@@ -482,7 +482,7 @@
             }
         },
         "description": "The Renesas EK-RZ/A3M board is an evaluation kit for the RZ/A3M MPU. It is an MPU but it has a focus on baremetal and RTOS applications. It boasts a mighty 1 GHz Cortex-A55 CPU and 128 MB of DDR3L-SDRAM. It is easy to use the low-level IO, of which it provides a lot. The board offers connectivity to many ecosystems like Arduino, Qwiic, Grove, mikroBUS, and Pmod. A 1280x720 display is included in the kit. It mounts to the board via a board-to-board connector.",
-        "shortDescription": "Renesas RZ/G2UL high performance baremetal MPU with abundant IO and peripherals",
+        "shortDescription": "Renesas EK-RZ/A3ML high performance baremetal MPU with abundant IO and peripherals",
         "urlToClone": "https://github.com/lvgl/lv_port_renesas-ek-rz_a3m.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
@@ -2203,6 +2203,42 @@
             "release/v9.2"
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_texas_sk-am62p-lp/blob/master/README.md#getting-started)",
+        "settings": []
+    },
+    {
+        "name": "Texas Instruments TMDS62LEVM",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto",
+            "Buildroot"
+        ],
+        "hardware": {
+            "chipVendor": "Texas Instruments",
+            "manufacturer": "Texas Instruments",
+            "specs": {
+                "MPU": "AM62L with Dual 64-bit Arm\u00ae Cortex\u00ae-A53 @1.25GHz",
+                "RAM": "2 GB DDR4 16-Bit data bus (1600 MT/s)",
+                "Flash": "Micro SD Card",
+                "GPU": "No GPU"
+            }
+        },
+        "description": "The Texas Instruments TMDS62LEVM evaluation module (EVM) is a stand-alone test and development platform built around the AM62L system-on-a-chip (SoC). AM62L processor is comprised of a dual-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has no GPU yet is fast with LVGL software rendering.",
+        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
+        "urlToClone": "https://github.com/lvgl/lv_port_texas_sk-am62l.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_texas_sk-am62l/master/board_images/ti-sk-am62l.webp",
+        "buy_now_links": [
+            "https://www.ti.com/tool/TMDS62LEVM"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_texas_sk-am62l/blob/master/README.md#getting-started)",
         "settings": []
     },
     {
