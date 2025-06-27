@@ -2056,7 +2056,7 @@
         ]
     },
     {
-        "name": "Toradex Verdin AM62\u201d",
+        "name": "Toradex Verdin AM62",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
             "Linux"
