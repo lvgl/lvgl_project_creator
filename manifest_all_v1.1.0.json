@@ -401,7 +401,7 @@
         ],
         "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek_ra8p1/master/board_images/renesas-EK-RA8P1.webp",
         "buy_now_links": [
-            "https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek_ra8p1/master/board_images/renesas-EK-RA8P1.webp"
+            "https://www.renesas.com/en/design-resources/boards-kits/ek-ra8p1"
         ],
         "branches": [
             "release/v9.3"
