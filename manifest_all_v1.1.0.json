@@ -2890,7 +2890,7 @@
         ]
     },
     {
-        "name": "F&S picocoremx93",
+        "name": "F&S PicoCore\u2122MX93",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
             "Linux"
