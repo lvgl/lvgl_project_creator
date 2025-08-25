@@ -2922,7 +2922,7 @@
         "branches": [
             "release/v9.3"
         ],
-        "getStartedInstructions": "Follow the guide in the [README](https://github.com/liamHowatt/lv_port_f-and-s_picocoremx93#getting-started)",
+        "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_f-and-s_picocoremx93#getting-started)",
         "settings": []
     }
 ]
