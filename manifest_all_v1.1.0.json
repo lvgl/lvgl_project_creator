@@ -1956,7 +1956,9 @@
             "MacOS"
         ],
         "environment": [
-            "MCUXpresso"
+            "make",
+            "cmake",
+            "Linux"
         ],
         "hardware": {
             "chipVendor": "NXP",
@@ -1981,11 +1983,7 @@
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_nxp_frdm_mcxn947/master/board_images/NXP-FRDM-MCXN947.webp",
-        "buy_now_links": [
-            "https://www.nxp.com/part/FRDM-MCXN947",
-            "https://www.nxp.com/part/LCD-PAR-S035"
-        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_nxp_frdm_mcxn947/master/board_image/frdm_mcxn947.webp",
         "branches": [
             "release/v9.2"
         ],
@@ -2909,7 +2907,7 @@
                 "GPU": "PXP"
             }
         },
-        "description": "The F&S picocoremx93 is a highly capable dual core compact SoM MPU (System-on-Module) which exposes abundant IO through its board-to-board mezzanine connectors. The processor is a dual-core 64-bit ARM Cortex-A55. The evaluation kit comes with a 1024x600 capacitive touch display and an evaluation board for the SoM which breaks-out some common interfaces like USB, Ethernet, serial, GPIO, SD Card, and more.",
+        "description": "The F&S PicoCore\u2122MX93 is a highly capable dual core compact SoM MPU (System-on-Module) which exposes abundant IO through its board-to-board mezzanine connectors. The processor is a dual-core 64-bit ARM Cortex-A55. The evaluation kit comes with a 1024x600 capacitive touch display and an evaluation board for the SoM which breaks-out some common interfaces like USB, Ethernet, serial, GPIO, SD Card, and more.",
         "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
         "urlToClone": "https://github.com/lvgl/lv_port_f-and-s_picocoremx93.git",
         "logos": [
