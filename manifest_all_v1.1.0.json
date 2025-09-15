@@ -2046,7 +2046,7 @@
         "branches": [
             "release/v9.1"
         ],
-        "getStartedInstructions": "Follow the detailed instructions at `https://docs.lvgl.io/master/details/integration/chip/alif.html` to get started.",
+        "getStartedInstructions": "Follow the detailed instructions at `https://docs.lvgl.io/master/details/integration/chip_vendors/alif/overview.html` to get started.",
         "settings": [
             {
                 "type": "dropdown",
