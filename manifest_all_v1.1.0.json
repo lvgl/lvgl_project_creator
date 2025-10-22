@@ -372,6 +372,67 @@
         ]
     },
     {
+        "name": "Renesas EK-RA8D2",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "Mac OS"
+        ],
+        "environment": [
+            "e2 Studio"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "Renesas",
+            "specs": {
+                "MPU": "Arm Cortex-M85 (1.0 GHz)",
+                "RAM": "1872 KB internal, 128 MB external",
+                "Flash": "1 MB",
+                "Interface": "Parallel RGB",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The Renesas EK-RA8D2 is an evaluation board for a high-end 1GHz ARM Cortex-M85 microcontroller with large external memory (128MB). It has a D/AVE 2D graphics accelerator which LVGL supports and is enabled in this project. The included display is 7\" and has a resolution of 1024x600.",
+        "shortDescription": "Renesas EK-RA8D2 high-end MCU with graphics acceleration",
+        "urlToClone": "https://github.com/lvgl/lv_port_renesas_ek-ra8d2.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_ek-ra8d2/master/board_images/renesas-EK-RA8D2.webp",
+        "buy_now_links": [
+            "https://www.renesas.com/en/design-resources/boards-kits/ek-ra8d2"
+        ],
+        "branches": [
+            "release/v9.3"
+        ],
+        "getStartedInstructions": "Follow the instructions in README.md to install e2 studio, get the FSP Packs, and build and debug the project.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show the system monitors",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_SYSMON .*",
+                        "newContent": "    #define LV_USE_SYSMON {value}",
+                        "filePath": "src/lv_conf_user.h"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "Renesas EK-RA8P1",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
