@@ -27,6 +27,9 @@ https://raw.githubusercontent.com/lvgl/lv_nuttx/master/manifests/stm32h745i-disc
 https://raw.githubusercontent.com/lvgl/lv_nuttx/master/manifests/waveshare-rp2040-lcd-1.28.json
 https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/imxrt1170-evk.json
 https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/m5stack_core2.json
+https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/ek-ra8d1.json
+https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/frdm-mcxn947.json
+https://raw.githubusercontent.com/lvgl/lv_zephyr/main/manifests/stm32u5g9j-dk2.json
 https://raw.githubusercontent.com/lvgl/lv_port_actions_technology/master/manifests/ats3089p-evb.json
 https://raw.githubusercontent.com/lvgl/lv_port_nxp_frdm_mcxn947/master/manifests/frdm_mcxn947.json
 https://raw.githubusercontent.com/lvgl/lv_alif/master/manifest.json
