@@ -42,6 +42,7 @@ https://raw.githubusercontent.com/lvgl/lv_port_riverdi_101-stm32h7/master/manife
 https://raw.githubusercontent.com/lvgl/lv_port_viewe_7_espidf/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_renesas_rz-g2l-evkit/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_renesas_rz-g2ul-evkit/refs/heads/master/manifest.json
+https://raw.githubusercontent.com/lvgl/lv_port_renesas_rz-g3e-evkit/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_icop_qec_ppc_m_090t/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_stm32u5g9j-dk2/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_viewe_knob_15_espidf/refs/heads/master/manifest.json
