@@ -308,6 +308,7 @@
             "https://renesas.com/ek-ra8d1"
         ],
         "branches": [
+            "master",
             "release/v9.2"
         ],
         "settings": [
@@ -353,7 +354,7 @@
                     {
                         "toReplace": "#define LV_USE_DRAW_DAVE2D .*",
                         "newContent": "#define LV_USE_DRAW_DAVE2D {value}",
-                        "filePath": "src/lv_conf.h"
+                        "filePath": "lv_conf.h"
                     }
                 ]
             },
@@ -375,7 +376,7 @@
                     {
                         "toReplace": "#define LV_USE_PERF_MONITOR .*",
                         "newContent": "#define LV_USE_PERF_MONITOR {value}",
-                        "filePath": "src/lv_conf.h"
+                        "filePath": "lv_conf.h"
                     }
                 ]
             }
