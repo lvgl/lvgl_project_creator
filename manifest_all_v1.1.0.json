@@ -1960,6 +1960,186 @@
         ]
     },
     {
+        "name": "Zephyr Renesas RA8D1-EK",
+        "maintainer": "Zephyr",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "cmake",
+            "Linux"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "Renesas",
+            "specs": {
+                "MCU": "R7FA8D1BHECBD (Cortex-M85, 480MHz)",
+                "RAM": "1MB internal, 64MB external SDRAM",
+                "Flash": "2MB internal, 64MB External Octo-SPI Flash",
+                "GPU": "Dave2D",
+                "Resolution": "480x854",
+                "Display Size": "4.5\u201d",
+                "Interface": "2-lane MIPI",
+                "Color Depth": "24-bit",
+                "Technology": "IPS",
+                "DPI": "217 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The Zephyr RTOS is a open source, highly configurable, scalable, secure, modular and vendor neutral real time operating system. The EK-RA8D1 evaluation kit enables users to effortlessly evaluate the features of the RA8D1 MCU Group and develop embedded systems applications using Renesas\u2019 Flexible Software Package (FSP) and e2 studio IDE. Utilize rich on-board features along with your choice of popular ecosystem add-ons to bring your big ideas to life.  The MCU has a Cortex-M85 core which utilizes the Helium (SIMD) instruction set of Arm. Besides that the chip is equipped with a GPU (called DAVE2D) to off load the MCU.",
+        "shortDescription": "Zephyr RTOS project for Renesas EK-RA8D1 with LVGL",
+        "urlToClone": "https://github.com/lvgl/lv_zephyr",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/zephyr/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_zephyr/main/board_images/ek_ra8d1.jpg",
+        "branches": [
+            "release/v9.2",
+            "release/v9.3",
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bek_ra8d1 application --shield rtkmipilcdb00000be`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Zephyr NXP FRDM-MCXN947",
+        "maintainer": "Zephyr",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "cmake",
+            "Linux"
+        ],
+        "hardware": {
+            "chipVendor": "NXP",
+            "manufacturer": "NXP",
+            "specs": {
+                "MCU": "MCXN-947",
+                "RAM": "512 KB SRAM",
+                "Flash": "2 MB",
+                "GPU": "None",
+                "Resolution": "480x320",
+                "Display Size": "3.5\u201d",
+                "Interface": "SPI",
+                "Color Depth": "16-bit",
+                "Technology": "LCD",
+                "DPI": "128 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The Zephyr RTOS is a open source, highly configurable, scalable, secure, modular and vendor neutral real time operating system. The NXP FRDM-MCXN947 is a devboard with an optional LCD add-on board. This option creates a MCU Expresso with LVGL for FRDM-MCXN947 and a basic directory structure for your custom LVGL app. ",
+        "shortDescription": "Zephyr RTOS project for FRDM-MCXN947 with LVGL",
+        "urlToClone": "https://github.com/lvgl/lv_zephyr",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/zephyr/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_zephyr/main/board_images/frdm_mcxn947.webp",
+        "branches": [
+            "release/v9.2",
+            "release/v9.3",
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bfrdm_mcxn947 application --shield lcd_par_s035_spi`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Zephyr ST STM32U5G9J-DK2",
+        "maintainer": "Zephyr",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "cmake",
+            "Linux"
+        ],
+        "hardware": {
+            "chipVendor": "ST",
+            "manufacturer": "ST",
+            "specs": {
+                "MCU": "STM32U5G9J (Cotex-M33, 160MHz)",
+                "RAM": "3MB (internal only)",
+                "Flash": "4MB (internal only)",
+                "GPU": "Neo-Chrom (GPU2D), Chrom-Art (DMA2D)",
+                "Resolution": "800x480",
+                "Display Size": "5.0\u201d",
+                "Interface": "RGB",
+                "Color Depth": "24-bit",
+                "DPI": "187 px/inch",
+                "Technology": "LCD",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The Zephyr RTOS is a open source, highly configurable, scalable, secure, modular and vendor neutral real time operating system. This STM32U5 series devboard is part of the family of ultra low power ST MCUs. It has a large amount of internal memory and the embedded Neo-Chrom GPU which accelerates LVGL rendering. With such a large internal SRAM, direct double buffering is possible at the great speed of internal SRAM.",
+        "shortDescription": "Zephyr RTOS project for STM32U5G9J-DK2 with LVGL",
+        "urlToClone": "https://github.com/lvgl/lv_zephyr",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/zephyr/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_zephyr/main/board_images/stm32u5g9j_dk2.webp",
+        "branches": [
+            "release/v9.2",
+            "release/v9.3",
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bstm32u5g9j_dk2 application`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "LV Port ATS3089P-EVB",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
