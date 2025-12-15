@@ -354,7 +354,7 @@
                     {
                         "toReplace": "#define LV_USE_DRAW_DAVE2D .*",
                         "newContent": "#define LV_USE_DRAW_DAVE2D {value}",
-                        "filePath": "lv_conf.h"
+                        "filePath": "src/lv_conf_user.h"
                     }
                 ]
             },
@@ -376,7 +376,7 @@
                     {
                         "toReplace": "#define LV_USE_PERF_MONITOR .*",
                         "newContent": "#define LV_USE_PERF_MONITOR {value}",
-                        "filePath": "lv_conf.h"
+                        "filePath": "src/lv_conf_user.h"
                     }
                 ]
             }
