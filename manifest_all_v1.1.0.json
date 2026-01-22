@@ -2589,6 +2589,47 @@
         "settings": []
     },
     {
+        "name": "MIMXRT1170-EVKB",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MCUXpresso"
+        ],
+        "hardware": {
+            "chipVendor": "NXP",
+            "manufacturer": "NXP",
+            "specs": {
+                "MCU": "i.MX RT1176xxA",
+                "RAM": "1 MB internal, 32 MB external",
+                "Flash": "16 MB",
+                "GPU": "PXP",
+                "Resolution": "480x800",
+                "Display Size": "7\u201d",
+                "Interface": "MIPI DSI",
+                "Color Depth": "32-bit",
+                "Technology": "IPS",
+                "DPI": "133 px/inch",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The NXP MIMXRT1170-EVK is a devboard with an optional touchscreen.",
+        "shortDescription": "MIMXRT1170-EVK with LVGL",
+        "urlToClone": "https://github.com/lvgl/lv_port_nxp_imxrt1170-evkb.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_nxp_imxrt1170-evkb/master/board_images/NXP-MIMXRT1170-EVK.webp",
+        "branches": [
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "Follow the instructions in README.md under \"Run the project\".",
+        "settings": []
+    },
+    {
         "name": "Riverdi STM32U5 Embedded 5\u201d",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
