@@ -3318,5 +3318,72 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "STM32H7S78-DK",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "CubeIDE"
+        ],
+        "hardware": {
+            "chipVendor": "ST",
+            "manufacturer": "ST",
+            "specs": {
+                "MCU": "STM32H7S7L8 (Cotex-M7, 600MHz)",
+                "RAM": "620KB internal, 32MB external",
+                "Flash": "64KB internal, 128MB External",
+                "GPU": "Neo-Chrom (GPU2D), Chrom-Art (DMA2D)",
+                "Resolution": "800x480",
+                "Display Size": "5.0\u201d",
+                "Interface": "RGB",
+                "Color Depth": "24-bit",
+                "DPI": "187 px/inch",
+                "Technology": "LCD",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "This is an H7 series board, touted for \"MPU UIs on an MCU\". It has a 600MHz ARM Cortex-M7 MCU with a memory protection unit. There is an unusually small internal flash and SRAM for such a powerful MCU, but it's compensated by 128MB flash and 32MB PSRAM. A very simple bootloader is needed to jump from the internal flash to the external flash at reset.",
+        "shortDescription": "Fast H7 with flexible boot options.",
+        "urlToClone": "https://github.com/lvgl/lv_port_stm32h7s78-dk.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg"
+        ],
+        "buy_now_links": [
+            "https://www.st.com/en/evaluation-tools/stm32h7s78-dk.html"
+        ],
+        "branches": [
+            "release/v9.4"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_stm32h7s78-dk/refs/heads/master/stm32h7s78-dk.png",
+        "getStartedInstructions": "- In STM32CubeIDE, click **File > Open Projects from File System**, click **Directory**, choose the cloned repo, and then click **Finish**.\n- You will need to build and upload the bootloader just once, unless you modify it.\n  - Click to highlight STM32H7S78-DK_Boot in the Project Explorer side panel\n  - Click the hammer icon to build the bootloader.\n  - Click the play icon to upload the bootloader to the board.\n- Click to highlight STM32H7S78-DK_Appli in the Project Explorer side panel\n- Click the hammer icon to build the application. The \"Debug\" build mode is used, even though full optimization is enabled.\n- Click the play icon to upload the application to the board.\n- After the application has been uploaded, press the black reset button (B1/U6) and the application will run.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_SYSMON .*",
+                        "newContent": "    #define LV_USE_SYSMON {value}",
+                        "filePath": "STM32CubeIDE/Appli/lv_conf.h"
+                    }
+                ]
+            }
+        ]
     }
 ]
