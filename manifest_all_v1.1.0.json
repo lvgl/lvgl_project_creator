@@ -3252,5 +3252,71 @@
         ],
         "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/f-and-s_picocoremx93/README.md)",
         "settings": []
+    },
+    {
+        "name": "STM32MP135F-DK",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux",
+            "Windows",
+            "MacOS"
+        ],
+        "environment": [
+            "CubeIDE"
+        ],
+        "hardware": {
+            "chipVendor": "ST",
+            "manufacturer": "ST",
+            "specs": {
+                "MCU": "STM32MP135F (Cortex-A7, 1 GHz)",
+                "RAM": "168KB internal, 512MB external",
+                "Flash": "Micro SD Card",
+                "Resolution": "480x272",
+                "Display Size": "4.3\u201d",
+                "Interface": "RGB",
+                "Color Depth": "16-bit",
+                "DPI": "128 px/inch",
+                "Technology": "LCD",
+                "Touch Pad": "Capacitive"
+            }
+        },
+        "description": "The STM32MP series of processors are MPUs with MMUs capable of running Linux. The STM32MP135F-DK is a devkit for the 1 GHz Cortex-A7 STM32MP135F MPU. It has a display and lots of high-level IO such as four USB ports and dual ethernet ports. The external SDRAM chip on the board is 512 MB.",
+        "shortDescription": "STM32MP1 microprocessor devkit with 480x272 touch display and high-level IO.",
+        "urlToClone": "https://github.com/lvgl/lv_port_stm32mp135f_disco_bm.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg"
+        ],
+        "buy_now_links": [
+            "https://www.st.com/en/microcontrollers-microprocessors/stm32mp135f.html"
+        ],
+        "branches": [
+            "release/v9.3"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_stm32mp135f_disco_bm/refs/heads/master/stm32mp135f-dk.png",
+        "getStartedInstructions": "Follow the instructions in README.md to compile and flash the device.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ],
+                "actions": [
+                    {
+                        "toReplace": " *#define LV_USE_SYSMON .*",
+                        "newContent": "    #define LV_USE_SYSMON {value}",
+                        "filePath": "LVGL/Target/lv_conf.h"
+                    }
+                ]
+            }
+        ]
     }
 ]
