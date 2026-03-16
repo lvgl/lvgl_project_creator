@@ -39,6 +39,7 @@ https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/te
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/texas-instruments_sk-am62p-lp/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/texas-instruments_sk-am62l/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/nxp_imx93/manifest.json
+https://raw.githubusercontent.com/lvgl/lv_port_nxp_imxrt1170-evkb/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_riverdi_stm32u5/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_riverdi_70-stm32h7/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_riverdi_101-stm32h7/master/manifest.json
