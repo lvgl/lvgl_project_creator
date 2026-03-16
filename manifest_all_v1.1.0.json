@@ -2389,19 +2389,19 @@
         },
         "description": "The Verdin AM62 is a cost-effective Computer on Module (CoM) based on the TI Sitara AM62x processor, offering up to four Cortex-A53 cores. It provides an attractive entry point into the Verdin ecosystem, with scalability through pin-compatibility with the Verdin iMX8M Mini and Plus modules. Featuring integrated Wi-Fi 4 and Bluetooth 5.2, or optional Wi-Fi 6 and Bluetooth 5.3 for custom configurations, it supports Torizon\u2019s OTA updates, device monitoring, and remote access. Designed for power-constrained applications, the Verdin AM62 includes advanced power management and hardware-based security for secure boot and cryptographic acceleration.",
         "shortDescription": "Powerful Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_toradex_verdin_am62.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg",
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/toradex/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_toradex_verdin_am62/master/board_images/toradex-verdin-am62.webp",
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/toradex-verdin_am62/toradex-verdin-am62.webp",
         "buy_now_links": [
             "https://www.toradex.com/computer-on-modules/verdin-arm-family/ti-am62#buynow"
         ],
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_toradex_verdin_am62/blob/master/README.md#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_am62/README.md#getting-started)",
         "settings": []
     },
     {
@@ -2427,19 +2427,19 @@
         },
         "description": "The Verdin imx8m mini is a cost-effective Computer on Module (CoM) based on the NXP imx8m mini processor, offering up to four Cortex-A53 cores. It features integrated Wi-Fi 5 and Bluetooth 5.3, Torizon\u2019s OTA updates, device monitoring, and remote access. Designed for power-constrained applications, the Verdin imx8m mini includes advanced power management and hardware-based security for secure boot and cryptographic acceleration.",
         "shortDescription": "Powerful Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_toradex_verdin_imx8m_mini.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg",
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/toradex/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_toradex_verdin_imx8m_mini/master/board_images/toradex-imx8mm.webp",
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/toradex-verdin_imx8m-mini/toradex-imx8m.webp",
         "buy_now_links": [
             "https://www.toradex.com/computer-on-modules/verdin-arm-family/nxp-imx-8m-mini-nano"
         ],
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_toradex_verdin_imx8m_mini/blob/master/README.md#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_imx8m-mini/README.md#getting-started)",
         "settings": []
     },
     {
@@ -2465,18 +2465,18 @@
         },
         "description": "The Texas Instruments SK-AM62B-P1 starter kit (SK) evaluation module (EVM) is a stand-alone test and development platform built around the AM62x system-on-a-chip (SoC). AM62x processors are comprised of a quad-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor and single-core Arm Cortex-M4F MCU. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has an embedded PowerVR GPU",
         "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_texas_sk-am62b-p1.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_texas_sk-am62b-p1/master/board_images/ti-sk-am62b-p1.webp",
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/texas-instruments_sk-am62b-p1/ti-sk-am62b-p1.webp",
         "buy_now_links": [
             "https://www.ti.com/tool/SK-AM62B-P1"
         ],
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_texas_sk-am62b-p1/blob/master/README.md#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62b-p1/README.md#getting-started)",
         "settings": []
     },
     {
@@ -2502,7 +2502,7 @@
         },
         "description": "The Texas Instruments SK-AM62P-LP starter kit (SK) evaluation module (EVM) is built around the AM62P display processor, which includes scalable Arm\u00ae Cortex\u00ae-A53 performance and embedded features, such as high-performance 3D-GPU, 4K video acceleration, and extensive peripherals. SK-AM62P-LP is for those looking to develop automotive and industrial applications, including automotive digital instrumentation, automotive displays, industrial HMI and more. It features an HDMI port for up to 4K 60fps displays, two ethernet ports, an M.2 expansion port for wireless connectivity or storage, and many other peripherals.",
         "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_texas_sk-am62p-lp.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
         ],
@@ -2513,7 +2513,7 @@
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_texas_sk-am62p-lp/blob/master/README.md#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/texas-instruments_sk-am62p-lp/README.md#getting-started)",
         "settings": []
     },
     {
@@ -2538,18 +2538,18 @@
         },
         "description": "The Texas Instruments TMDS62LEVM evaluation module (EVM) is a stand-alone test and development platform built around the AM62L system-on-a-chip (SoC). AM62L processor is comprised of a dual-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has no GPU yet is fast with LVGL software rendering.",
         "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_texas_sk-am62l.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_texas_sk-am62l/master/board_images/ti-sk-am62l.webp",
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/texas-instruments_sk-am62l/ti-sk-am62l.webp",
         "buy_now_links": [
             "https://www.ti.com/tool/TMDS62LEVM"
         ],
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follw the guide in the [README](https://github.com/lvgl/lv_port_texas_sk-am62l/blob/master/README.md#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62l/README.md#getting-started)",
         "settings": []
     },
     {
@@ -2574,18 +2574,18 @@
         },
         "description": "The i.MX 93 applications processors are the first in the i.MX portfolio to integrate the scalable Arm Cortex-A55 core, bringing performance and energy efficiency to Linux\u00ae-based edge applications and the Arm Ethos\u2122-U65 microNPU, enabling developers to create more capable, cost-effective and energy-efficient ML applications. The i.MX 93 EVK for 11x11mm sample provides a platform for comprehensive evaluation of the i.MX 93 applications processors and also includes the ability to measure power consumption on the power rails. ",
         "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_nxp_imx93.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_nxp_imx93/master/board_images/NXP-imx-93-evaluation-kit.webp",
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/nxp_imx93/NXP-imx-93-evaluation-kit.webp",
         "buy_now_links": [
             "https://www.nxp.com/design/design-center/development-boards-and-designs/i-mx-evaluation-and-development-boards/i-mx-93-evaluation-kit:i.MX93EVK"
         ],
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_nxp_imx93#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/nxp_imx93/README.md)",
         "settings": []
     },
     {
@@ -3038,18 +3038,18 @@
         },
         "description": "The RZ/G3E-EVKIT is a development kit for the RZ/G3E MPU. It's a SMARC v2.1 System-on-Module (SOM) with a carrier board. It is one of the more powerful MPU boards available and has some specialized applications in mind for use with GStreamer and electrical current measurement.",
         "shortDescription": "High performance Renesas Cortex\u00ae-A55 based SMARC SoM.",
-        "urlToClone": "https://github.com/lvgl/lv_port_renesas_rz-g3e-evkit.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_renesas_rz-g3e-evkit/master/board_images/renesas_rz-g3e-evkit.webp",
         "buy_now_links": [
             "https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit"
         ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/renesas_rz-g3e-evkit/renesas_rz-g3e-evkit.webp",
         "branches": [
             "release/v9.4"
         ],
-        "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_renesas_rz-g3e-evkit#getting-started)",
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3e-evkit/README.md)",
         "settings": []
     },
     {
@@ -3239,7 +3239,7 @@
         },
         "description": "The F&S PicoCore\u2122MX93 is a highly capable dual core compact SoM MPU (System-on-Module) which exposes abundant IO through its board-to-board mezzanine connectors. The processor is a dual-core 64-bit ARM Cortex-A55. The evaluation kit comes with a 1024x600 capacitive touch display and an evaluation board for the SoM which breaks-out some common interfaces like USB, Ethernet, serial, GPIO, SD Card, and more.",
         "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_f-and-s_picocoremx93.git",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/f_and_s/logo.svg"
         ],
@@ -3250,7 +3250,7 @@
         "branches": [
             "release/v9.3"
         ],
-        "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_f-and-s_picocoremx93#getting-started)",
+        "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/f-and-s_picocoremx93/README.md)",
         "settings": []
     }
 ]
