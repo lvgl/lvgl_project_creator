@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/lvgl/lv_port_actions_technology/master/manifes
 https://raw.githubusercontent.com/lvgl/lv_port_nxp_frdm_mcxn947/master/manifests/frdm_mcxn947.json
 https://raw.githubusercontent.com/lvgl/lv_alif/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/f-and-s_picocoremx93/manifest.json
-https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/glyn_ui2-start-kit/manifest.json
+https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/glyn_ui2-starter-kit/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/nxp_imx93/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/renesas_rz-g3e-evkit/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/stm32mp157f-dk/manifest.json
