@@ -1882,7 +1882,7 @@
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -p -bmimxrt1170_evk@B/mimxrt1176/cm7 --shield rk055hdmipi4ma0 application`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "getStartedInstructions": "1. Install the Zephyr prerequisites, west and the Zephyr SDK: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. From the folder that contains this project run `west init -l lv_zephyr` and `west update`.\n3. Build: `west build -p -b mimxrt1170_evk@B/mimxrt1176/cm7 lv_zephyr/application --shield rk055hdmipi4ma0`.\n4. Run `west flash` for flashing and `west debug` for debugging.",
         "settings": [
             {
                 "type": "dropdown",
@@ -1930,7 +1930,7 @@
                 "Touch Pad": "Capacitive"
             }
         },
-        "description": "The Zephyr RTOS is a open source, highly configurable, scalable, secure, modular and vendor neutral real time operating system. The NXP MIMXRT1170-EVK is a devboard with an optional touchscreen. This option creates a Zephyr project for the MIMXRT1170-EVK based on the Zephyr LVGL for mimxrt1170-evk and a basic directory structure for your custom LVGL app.",
+        "description": "The Zephyr RTOS is a open source, highly configurable, scalable, secure, modular and vendor neutral real time operating system. The M5Stack Core2 is an ESP32-based development kit with a built-in 2\" capacitive touch screen. This option creates a Zephyr project for the M5Stack Core2 based on the Zephyr LVGL module and a basic directory structure for your custom LVGL app.",
         "shortDescription": "Zephyr RTOS project for M5Stack Core 2 with LVGL",
         "urlToClone": "https://github.com/lvgl/lv_zephyr",
         "logos": [
@@ -1940,7 +1940,7 @@
         "branches": [
             "release/v9.2"
         ],
-        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bm5stack_core2/esp32/procpu application`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "getStartedInstructions": "1. Install the Zephyr prerequisites, west and the Zephyr SDK: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. From the folder that contains this project run `west init -l lv_zephyr` and `west update`.\n3. Run `west blobs fetch hal_espressif` (ESP32 binary blobs).\n4. Build: `west build -p -b m5stack_core2/esp32/procpu lv_zephyr/application`.\n5. Run `west flash` for flashing and `west debug` for debugging.",
         "settings": [
             {
                 "type": "dropdown",
@@ -2000,7 +2000,7 @@
             "release/v9.3",
             "release/v9.4"
         ],
-        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bek_ra8d1 application --shield rtkmipilcdb00000be`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "getStartedInstructions": "1. Install the Zephyr prerequisites, west and the Zephyr SDK: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. From the folder that contains this project run `west init -l lv_zephyr` and `west update`.\n3. Build: `west build -p -b ek_ra8d1 lv_zephyr/application --shield rtkmipilcdb00000be`.\n4. Run `west flash` for flashing and `west debug` for debugging.",
         "settings": [
             {
                 "type": "dropdown",
@@ -2060,7 +2060,7 @@
             "release/v9.3",
             "release/v9.4"
         ],
-        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bfrdm_mcxn947 application --shield lcd_par_s035_spi`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "getStartedInstructions": "1. Install the Zephyr prerequisites, west and the Zephyr SDK: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. From the folder that contains this project run `west init -l lv_zephyr` and `west update`.\n3. Build: `west build -p -b frdm_mcxn947/mcxn947/cpu0 lv_zephyr/application --shield lcd_par_s035_8080`.\n4. Run `west flash` for flashing and `west debug` for debugging.",
         "settings": [
             {
                 "type": "dropdown",
@@ -2120,7 +2120,7 @@
             "release/v9.3",
             "release/v9.4"
         ],
-        "getStartedInstructions": "1. Install Zephyr on your host machine: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. Run `west build -pauto -bstm32u5g9j_dk2 application`.\n3.  Run `west flash` for flashing.\n4. Run `west debug` for debugging.",
+        "getStartedInstructions": "1. Install the Zephyr prerequisites, west and the Zephyr SDK: `https://docs.zephyrproject.org/latest/develop/getting_started/index.html`.\n2. From the folder that contains this project run `west init -l lv_zephyr` and `west update`.\n3. Build: `west build -p -b stm32u5g9j_dk2 lv_zephyr/application`.\n4. Run `west flash` for flashing and `west debug` for debugging.",
         "settings": [
             {
                 "type": "dropdown",
@@ -2367,6 +2367,333 @@
         ]
     },
     {
+        "name": "F&S PicoCore\u2122MX93",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto"
+        ],
+        "hardware": {
+            "chipVendor": "NXP",
+            "manufacturer": "F&S",
+            "specs": {
+                "MPU": "Dual Cortex-A55 @1.7GHz",
+                "MCU": "Cortex-M33 @250MHz",
+                "RAM": "2 GB LPDDR4",
+                "Flash": "64GB eMMC",
+                "GPU": "PXP"
+            }
+        },
+        "description": "The F&S PicoCore\u2122MX93 is a highly capable dual core compact SoM MPU (System-on-Module) which exposes abundant IO through its board-to-board mezzanine connectors. The processor is a dual-core 64-bit ARM Cortex-A55. The evaluation kit comes with a 1024x600 capacitive touch display and an evaluation board for the SoM which breaks-out some common interfaces like USB, Ethernet, serial, GPIO, SD Card, and more.",
+        "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/f_and_s/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_f-and-s_picocoremx93/master/board_images/FS-PicoCore-MX93.png",
+        "buy_now_links": [
+            "https://www.fs-net.de/en/embedded-modules/computer-on-module-picocore/picocoremx93-with-nxp-imx93-cpu"
+        ],
+        "branches": [
+            "release/v9.3"
+        ],
+        "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/f-and-s_picocoremx93/README.md)",
+        "settings": []
+    },
+    {
+        "name": "GLYN UI2 Starter Kit",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto",
+            "CMake"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "GLYN",
+            "specs": {
+                "MPU": "Dual Cortex-A55 @1.2 GHz",
+                "RAM": "1 GB DDR3L",
+                "Flash": "Micro SD Card + 4GB eMMC",
+                "GPU": "Mali-G31"
+            }
+        },
+        "description": "The GLYN UI2 is an evaluation kit for the RZ/G2L MPU. It ships with a display so that you can quickly get started with your UI development.",
+        "shortDescription": "GLYN UI2 evaluation kit for the RZ/G2L MPU",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/glyn_ui2-starter-kit/glyn_logo.webp"
+        ],
+        "buy_now_links": [
+            "https://www.glyn.com/products/computer-on-module/qs-evaluationkits/"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/glyn_ui2-starter-kit/glyn-ui2-starter-kit.jpg",
+        "branches": [
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/glyn_ui2-starter-kit/README.md)",
+        "settings": []
+    },
+    {
+        "name": "i.MX 93 Evaluation Kit",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto"
+        ],
+        "hardware": {
+            "chipVendor": "NXP",
+            "manufacturer": "NXP",
+            "specs": {
+                "MPU": "Dual Cortex-A55 @1.7GHz",
+                "MCU": "Cortex-M33 @250MHz",
+                "RAM": "2 GB LPDDR4X / LPDDR4 16-Bit data bus with inline ECC (3.7 GT/s)",
+                "Flash": "16 GB eMMC5.1 Micro SD Card",
+                "GPU": "PowerVR"
+            }
+        },
+        "description": "The i.MX 93 applications processors are the first in the i.MX portfolio to integrate the scalable Arm Cortex-A55 core, bringing performance and energy efficiency to Linux\u00ae-based edge applications and the Arm Ethos\u2122-U65 microNPU, enabling developers to create more capable, cost-effective and energy-efficient ML applications. The i.MX 93 EVK for 11x11mm sample provides a platform for comprehensive evaluation of the i.MX 93 applications processors and also includes the ability to measure power consumption on the power rails. ",
+        "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/nxp_imx93/NXP-imx-93-evaluation-kit.webp",
+        "buy_now_links": [
+            "https://www.nxp.com/design/design-center/development-boards-and-designs/i-mx-evaluation-and-development-boards/i-mx-93-evaluation-kit:i.MX93EVK"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/nxp_imx93/README.md)",
+        "settings": []
+    },
+    {
+        "name": "Renesas RZ/G3E-EVKIT",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto",
+            "CMake"
+        ],
+        "hardware": {
+            "chipVendor": "Renesas",
+            "manufacturer": "Renesas",
+            "specs": {
+                "MPU": "Quad Cortex-A55 @1.8GHz",
+                "MCU": "Cortex-M33 @200MHz",
+                "RAM": "4 GB LPDDR4",
+                "Flash": "Micro SD Card + 64GB eMMC",
+                "GPU": "Mali-G52"
+            }
+        },
+        "description": "The RZ/G3E-EVKIT is a development kit for the RZ/G3E MPU. It's a SMARC v2.1 System-on-Module (SOM) with a carrier board. It is one of the more powerful MPU boards available and has some specialized applications in mind for use with GStreamer and electrical current measurement.",
+        "shortDescription": "High performance Renesas Cortex\u00ae-A55 based SMARC SoM.",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
+        ],
+        "buy_now_links": [
+            "https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/renesas_rz-g3e-evkit/renesas_rz-g3e-evkit.webp",
+        "branches": [
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3e-evkit/README.md)",
+        "settings": []
+    },
+    {
+        "name": "STM32MP157F-DK2",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "CMake"
+        ],
+        "hardware": {
+            "chipVendor": "STMicroelectronics",
+            "manufacturer": "STMicroelectronics",
+            "specs": {
+                "MPU": "Dual Cortex-A7 @800 MHz",
+                "RAM": "512 MB DDR3L",
+                "Flash": "Micro SD Card",
+                "GPU": "3D Vivante GPU"
+            }
+        },
+        "description": "A versatile dual ARM Cortex-A7 MPU from ST equipped to run Linux with impressive graphics capabilities and lots of IO.",
+        "shortDescription": "STMicroelectronics MP1 processor devkit with touchscreen",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg"
+        ],
+        "buy_now_links": [
+            "https://www.st.com/en/evaluation-tools/stm32mp157f-dk2.html"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp157f-dk/stm32mp157f-dk.avif",
+        "branches": [
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp157f-dk/README.md)",
+        "settings": []
+    },
+    {
+        "name": "STM32MP257F-DK",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "CMake"
+        ],
+        "hardware": {
+            "chipVendor": "STMicroelectronics",
+            "manufacturer": "STMicroelectronics",
+            "specs": {
+                "MPU": "Dual Cortex-A35 @1.5 GHz",
+                "MCU": "Cortex-M33 @400 MHz",
+                "RAM": "4 GB LPDDR4",
+                "Flash": "8 GB eMMC + Micro SD Card",
+                "GPU": "3D Vivante GC8000UL (OpenGL ES 3.2)",
+                "NPU": "1.35 TOPS"
+            }
+        },
+        "description": "ST's Discovery kit for the STM32MP25 series: a dual Cortex-A35 MPU with a Cortex-M33 real-time core, a Vivante GC8000UL 3D GPU and a 1.35 TOPS NPU. Runs LVGL's 2D and 3D/glTF rendering on Wayland or DRM.",
+        "shortDescription": "STMicroelectronics MP2 processor devkit with 3D GPU and NPU",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/st/logo.svg"
+        ],
+        "buy_now_links": [
+            "https://www.st.com/en/evaluation-tools/stm32mp257f-dk.html"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp257f-dk/stm32mp257f-dk.webp",
+        "branches": [
+            "release/v9.4"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/stm32mp257f-dk/README.md)",
+        "settings": []
+    },
+    {
+        "name": "Texas Instruments SK-AM62B-P1",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto",
+            "Buildroot"
+        ],
+        "hardware": {
+            "chipVendor": "Texas Instruments",
+            "manufacturer": "Texas Instruments",
+            "specs": {
+                "MPU": "AM625 with Quad 64-bit Arm\u00ae Cortex\u00ae-A53 @1.4GHz",
+                "MCU": "Arm\u00ae Cortex\u00ae-M4F MCU",
+                "RAM": "2 GB DDR4 16-Bit data bus with inline ECC (1600 MT/s)",
+                "Flash": "Micro SD Card",
+                "GPU": "PowerVR"
+            }
+        },
+        "description": "The Texas Instruments SK-AM62B-P1 starter kit (SK) evaluation module (EVM) is a stand-alone test and development platform built around the AM62x system-on-a-chip (SoC). AM62x processors are comprised of a quad-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor and single-core Arm Cortex-M4F MCU. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has an embedded PowerVR GPU",
+        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/texas-instruments_sk-am62b-p1/ti-sk-am62b-p1.webp",
+        "buy_now_links": [
+            "https://www.ti.com/tool/SK-AM62B-P1"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62b-p1/README.md#getting-started)",
+        "settings": []
+    },
+    {
+        "name": "Texas Instruments TMDS62LEVM",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto",
+            "Buildroot"
+        ],
+        "hardware": {
+            "chipVendor": "Texas Instruments",
+            "manufacturer": "Texas Instruments",
+            "specs": {
+                "MPU": "AM62L with Dual 64-bit Arm\u00ae Cortex\u00ae-A53 @1.25GHz",
+                "RAM": "2 GB DDR4 16-Bit data bus (1600 MT/s)",
+                "Flash": "Micro SD Card",
+                "GPU": "No GPU"
+            }
+        },
+        "description": "The Texas Instruments TMDS62LEVM evaluation module (EVM) is a stand-alone test and development platform built around the AM62L system-on-a-chip (SoC). AM62L processor is comprised of a dual-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has no GPU yet is fast with LVGL software rendering.",
+        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/texas-instruments_sk-am62l/ti-sk-am62l.webp",
+        "buy_now_links": [
+            "https://www.ti.com/tool/TMDS62LEVM"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62l/README.md#getting-started)",
+        "settings": []
+    },
+    {
+        "name": "Texas Instruments SK-AM62P-LP",
+        "maintainer": "LVGL",
+        "hostOperatingsystem": [
+            "Linux"
+        ],
+        "environment": [
+            "Yocto",
+            "Buildroot"
+        ],
+        "hardware": {
+            "chipVendor": "Texas Instruments",
+            "manufacturer": "Texas Instruments",
+            "specs": {
+                "MPU": "AM625P with Quad 64-bit Arm\u00ae Cortex\u00ae-A53 @1.4GHz",
+                "MCU": "two ARM\u00ae Cortex\u00ae-R5F single core up to 800MHz",
+                "RAM": "8 GB LPDDR4 32-Bit data bus with inline ECC (3200 MT/s)",
+                "Flash": "Micro SD Card",
+                "GPU": "PowerVR"
+            }
+        },
+        "description": "The Texas Instruments SK-AM62P-LP starter kit (SK) evaluation module (EVM) is built around the AM62P display processor, which includes scalable Arm\u00ae Cortex\u00ae-A53 performance and embedded features, such as high-performance 3D-GPU, 4K video acceleration, and extensive peripherals. SK-AM62P-LP is for those looking to develop automotive and industrial applications, including automotive digital instrumentation, automotive displays, industrial HMI and more. It features an HDMI port for up to 4K 60fps displays, two ethernet ports, an M.2 expansion port for wireless connectivity or storage, and many other peripherals.",
+        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
+        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_texas_sk-am62p-lp/master/board_images/ti-sk-am62p-lp.webp",
+        "buy_now_links": [
+            "https://www.ti.com/tool/SK-AM62P-LP"
+        ],
+        "branches": [
+            "release/v9.2"
+        ],
+        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/texas-instruments_sk-am62p-lp/README.md#getting-started)",
+        "settings": []
+    },
+    {
         "name": "Toradex Verdin AM62",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
@@ -2440,152 +2767,6 @@
             "release/v9.2"
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_imx8m-mini/README.md#getting-started)",
-        "settings": []
-    },
-    {
-        "name": "Texas Instruments SK-AM62B-P1",
-        "maintainer": "LVGL",
-        "hostOperatingsystem": [
-            "Linux"
-        ],
-        "environment": [
-            "Yocto",
-            "Buildroot"
-        ],
-        "hardware": {
-            "chipVendor": "Texas Instruments",
-            "manufacturer": "Texas Instruments",
-            "specs": {
-                "MPU": "AM625 with Quad 64-bit Arm\u00ae Cortex\u00ae-A53 @1.4GHz",
-                "MCU": "Arm\u00ae Cortex\u00ae-M4F MCU",
-                "RAM": "2 GB DDR4 16-Bit data bus with inline ECC (1600 MT/s)",
-                "Flash": "Micro SD Card",
-                "GPU": "PowerVR"
-            }
-        },
-        "description": "The Texas Instruments SK-AM62B-P1 starter kit (SK) evaluation module (EVM) is a stand-alone test and development platform built around the AM62x system-on-a-chip (SoC). AM62x processors are comprised of a quad-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor and single-core Arm Cortex-M4F MCU. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has an embedded PowerVR GPU",
-        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
-        "logos": [
-            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
-        ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/texas-instruments_sk-am62b-p1/ti-sk-am62b-p1.webp",
-        "buy_now_links": [
-            "https://www.ti.com/tool/SK-AM62B-P1"
-        ],
-        "branches": [
-            "release/v9.2"
-        ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62b-p1/README.md#getting-started)",
-        "settings": []
-    },
-    {
-        "name": "Texas Instruments SK-AM62P-LP",
-        "maintainer": "LVGL",
-        "hostOperatingsystem": [
-            "Linux"
-        ],
-        "environment": [
-            "Yocto",
-            "Buildroot"
-        ],
-        "hardware": {
-            "chipVendor": "Texas Instruments",
-            "manufacturer": "Texas Instruments",
-            "specs": {
-                "MPU": "AM625P with Quad 64-bit Arm\u00ae Cortex\u00ae-A53 @1.4GHz",
-                "MCU": "two ARM\u00ae Cortex\u00ae-R5F single core up to 800MHz",
-                "RAM": "8 GB LPDDR4 32-Bit data bus with inline ECC (3200 MT/s)",
-                "Flash": "Micro SD Card",
-                "GPU": "PowerVR"
-            }
-        },
-        "description": "The Texas Instruments SK-AM62P-LP starter kit (SK) evaluation module (EVM) is built around the AM62P display processor, which includes scalable Arm\u00ae Cortex\u00ae-A53 performance and embedded features, such as high-performance 3D-GPU, 4K video acceleration, and extensive peripherals. SK-AM62P-LP is for those looking to develop automotive and industrial applications, including automotive digital instrumentation, automotive displays, industrial HMI and more. It features an HDMI port for up to 4K 60fps displays, two ethernet ports, an M.2 expansion port for wireless connectivity or storage, and many other peripherals.",
-        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
-        "logos": [
-            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
-        ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_texas_sk-am62p-lp/master/board_images/ti-sk-am62p-lp.webp",
-        "buy_now_links": [
-            "https://www.ti.com/tool/SK-AM62P-LP"
-        ],
-        "branches": [
-            "release/v9.2"
-        ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/texas-instruments_sk-am62p-lp/README.md#getting-started)",
-        "settings": []
-    },
-    {
-        "name": "Texas Instruments TMDS62LEVM",
-        "maintainer": "LVGL",
-        "hostOperatingsystem": [
-            "Linux"
-        ],
-        "environment": [
-            "Yocto",
-            "Buildroot"
-        ],
-        "hardware": {
-            "chipVendor": "Texas Instruments",
-            "manufacturer": "Texas Instruments",
-            "specs": {
-                "MPU": "AM62L with Dual 64-bit Arm\u00ae Cortex\u00ae-A53 @1.25GHz",
-                "RAM": "2 GB DDR4 16-Bit data bus (1600 MT/s)",
-                "Flash": "Micro SD Card",
-                "GPU": "No GPU"
-            }
-        },
-        "description": "The Texas Instruments TMDS62LEVM evaluation module (EVM) is a stand-alone test and development platform built around the AM62L system-on-a-chip (SoC). AM62L processor is comprised of a dual-core 64-bit Arm\u00ae-Cortex\u00ae-A53 microprocessor. It features an HDMI port for up to 2K 60fps displays and two ethernet ports. It has no GPU yet is fast with LVGL software rendering.",
-        "shortDescription": "Powerful Texas Instruments Cortex\u00ae-A53 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
-        "logos": [
-            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/texas_instruments/logo.svg"
-        ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/texas-instruments_sk-am62l/ti-sk-am62l.webp",
-        "buy_now_links": [
-            "https://www.ti.com/tool/TMDS62LEVM"
-        ],
-        "branches": [
-            "release/v9.2"
-        ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62l/README.md#getting-started)",
-        "settings": []
-    },
-    {
-        "name": "i.MX 93 Evaluation Kit",
-        "maintainer": "LVGL",
-        "hostOperatingsystem": [
-            "Linux"
-        ],
-        "environment": [
-            "Yocto"
-        ],
-        "hardware": {
-            "chipVendor": "NXP",
-            "manufacturer": "NXP",
-            "specs": {
-                "MPU": "Dual Cortex-A55 @1.7GHz",
-                "MCU": "Cortex-M33 @250MHz",
-                "RAM": "2 GB LPDDR4X / LPDDR4 16-Bit data bus with inline ECC (3.7 GT/s)",
-                "Flash": "16 GB eMMC5.1 Micro SD Card",
-                "GPU": "PowerVR"
-            }
-        },
-        "description": "The i.MX 93 applications processors are the first in the i.MX portfolio to integrate the scalable Arm Cortex-A55 core, bringing performance and energy efficiency to Linux\u00ae-based edge applications and the Arm Ethos\u2122-U65 microNPU, enabling developers to create more capable, cost-effective and energy-efficient ML applications. The i.MX 93 EVK for 11x11mm sample provides a platform for comprehensive evaluation of the i.MX 93 applications processors and also includes the ability to measure power consumption on the power rails. ",
-        "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
-        "logos": [
-            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/nxp/logo.svg"
-        ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/nxp_imx93/NXP-imx-93-evaluation-kit.webp",
-        "buy_now_links": [
-            "https://www.nxp.com/design/design-center/development-boards-and-designs/i-mx-evaluation-and-development-boards/i-mx-93-evaluation-kit:i.MX93EVK"
-        ],
-        "branches": [
-            "release/v9.2"
-        ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/nxp_imx93/README.md)",
         "settings": []
     },
     {
@@ -3016,43 +3197,6 @@
         ]
     },
     {
-        "name": "Renesas RZ/G3E-EVKIT",
-        "maintainer": "LVGL",
-        "hostOperatingsystem": [
-            "Linux"
-        ],
-        "environment": [
-            "Yocto",
-            "CMake"
-        ],
-        "hardware": {
-            "chipVendor": "Renesas",
-            "manufacturer": "Renesas",
-            "specs": {
-                "MPU": "Quad Cortex-A55 @1.8GHz",
-                "MCU": "Cortex-M33 @200MHz",
-                "RAM": "4 GB LPDDR4",
-                "Flash": "Micro SD Card + 64GB eMMC",
-                "GPU": "Mali-G52"
-            }
-        },
-        "description": "The RZ/G3E-EVKIT is a development kit for the RZ/G3E MPU. It's a SMARC v2.1 System-on-Module (SOM) with a carrier board. It is one of the more powerful MPU boards available and has some specialized applications in mind for use with GStreamer and electrical current measurement.",
-        "shortDescription": "High performance Renesas Cortex\u00ae-A55 based SMARC SoM.",
-        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
-        "logos": [
-            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/renesas/logo.svg"
-        ],
-        "buy_now_links": [
-            "https://www.renesas.com/en/design-resources/boards-kits/rz-g3e-evkit"
-        ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/renesas_rz-g3e-evkit/renesas_rz-g3e-evkit.webp",
-        "branches": [
-            "release/v9.4"
-        ],
-        "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3e-evkit/README.md)",
-        "settings": []
-    },
-    {
         "name": "iCOP QEC-PPC-M-090T",
         "maintainer": "LVGL",
         "hostOperatingsystem": [
@@ -3216,42 +3360,6 @@
                 ]
             }
         ]
-    },
-    {
-        "name": "F&S PicoCore\u2122MX93",
-        "maintainer": "LVGL",
-        "hostOperatingsystem": [
-            "Linux"
-        ],
-        "environment": [
-            "Yocto"
-        ],
-        "hardware": {
-            "chipVendor": "NXP",
-            "manufacturer": "F&S",
-            "specs": {
-                "MPU": "Dual Cortex-A55 @1.7GHz",
-                "MCU": "Cortex-M33 @250MHz",
-                "RAM": "2 GB LPDDR4",
-                "Flash": "64GB eMMC",
-                "GPU": "PXP"
-            }
-        },
-        "description": "The F&S PicoCore\u2122MX93 is a highly capable dual core compact SoM MPU (System-on-Module) which exposes abundant IO through its board-to-board mezzanine connectors. The processor is a dual-core 64-bit ARM Cortex-A55. The evaluation kit comes with a 1024x600 capacitive touch display and an evaluation board for the SoM which breaks-out some common interfaces like USB, Ethernet, serial, GPIO, SD Card, and more.",
-        "shortDescription": "Powerful NXP Cortex\u00ae-A55 based device for embedded Linux.",
-        "urlToClone": "https://github.com/lvgl/lv_port_linux.git",
-        "logos": [
-            "https://raw.githubusercontent.com/lvgl/project-creator/master/meta/images/f_and_s/logo.svg"
-        ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_f-and-s_picocoremx93/master/board_images/FS-PicoCore-MX93.png",
-        "buy_now_links": [
-            "https://www.fs-net.de/en/embedded-modules/computer-on-module-picocore/picocoremx93-with-nxp-imx93-cpu"
-        ],
-        "branches": [
-            "release/v9.3"
-        ],
-        "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/f-and-s_picocoremx93/README.md)",
-        "settings": []
     },
     {
         "name": "STM32MP135F-DK",
