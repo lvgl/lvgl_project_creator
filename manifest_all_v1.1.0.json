@@ -2521,8 +2521,8 @@
             "CMake"
         ],
         "hardware": {
-            "chipVendor": "STMicroelectronics",
-            "manufacturer": "STMicroelectronics",
+            "chipVendor": "ST",
+            "manufacturer": "ST",
             "specs": {
                 "MPU": "Dual Cortex-A7 @800 MHz",
                 "RAM": "512 MB DDR3L",
@@ -2556,8 +2556,8 @@
             "CMake"
         ],
         "hardware": {
-            "chipVendor": "STMicroelectronics",
-            "manufacturer": "STMicroelectronics",
+            "chipVendor": "ST",
+            "manufacturer": "ST",
             "specs": {
                 "MPU": "Dual Cortex-A35 @1.5 GHz",
                 "MCU": "Cortex-M33 @400 MHz",
@@ -2576,7 +2576,7 @@
         "buy_now_links": [
             "https://www.st.com/en/evaluation-tools/stm32mp257f-dk.html"
         ],
-        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp257f-dk/stm32mp257f-dk.webp",
+        "image": "https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp257f-dk/stm32mp257f-dk.png",
         "branches": [
             "release/v9.4"
         ],
