@@ -37,6 +37,7 @@ https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/f-
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/glyn_ui2-starter-kit/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/nxp_imx93/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/renesas_rz-g3e-evkit/manifest.json
+https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/renesas_rz-g3l-evkit/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/stm32mp157f-dk/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/stm32mp257f-dk/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_linux/refs/heads/master/boards/texas-instruments_sk-am62b-p1/manifest.json
