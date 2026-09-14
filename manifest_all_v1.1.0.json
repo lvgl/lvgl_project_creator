@@ -3529,5 +3529,67 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "GigaDevice GD32C231C-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32C231 (Cortex-M23, 48MHz)",
+                "RAM": "12KB internal",
+                "Flash": "64KB internal",
+                "GPU": "None",
+                "Resolution": "240*320",
+                "Display Size": "2.2\u201d",
+                "Interface": "SPI",
+                "Color Depth": "16-bit (65K), up to 18-bit (262K)",
+                "Technology": "a-Si TFT",
+                "DPI": "180 px/inch",
+                "Touch Pad": "None"
+            }
+        },
+        "description": "The GigaDevice GD32C231C-EVAL is an evaluation board for an entry-level 48MHz ARM Cortex-M23 microcontroller with 64KB internal flash and 12KB internal SRAM. It has no graphics accelerator, so LVGL renders entirely on the CPU in this project. The included display is 2.2\" and has a resolution of 240x320, driven over SPI.",
+        "shortDescription": "GigaDevice GD32C231C-EVAL entry-level MCU with SPI display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32C231EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32C231C_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32c231c-eval?variant=53039847211340"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
     }
 ]
