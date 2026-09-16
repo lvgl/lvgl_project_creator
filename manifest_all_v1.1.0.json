@@ -3548,20 +3548,20 @@
             "manufacturer": "GigaDevice",
             "specs": {
                 "MCU": "GD32C231 (Cortex-M23, 48MHz)",
-                "RAM": "12KB internal",
+                "RAM": "12KB internal SRAM",
                 "Flash": "64KB internal",
                 "GPU": "None",
                 "Resolution": "240*320",
-                "Display Size": "2.2\u201d",
+                "Display Size": "2.2 inch",
                 "Interface": "SPI",
-                "Color Depth": "16-bit (65K), up to 18-bit (262K)",
+                "Color Depth": "16-bit RGB565",
                 "Technology": "a-Si TFT",
                 "DPI": "180 px/inch",
                 "Touch Pad": "None"
             }
         },
-        "description": "The GigaDevice GD32C231C-EVAL is an evaluation board for an entry-level 48MHz ARM Cortex-M23 microcontroller with 64KB internal flash and 12KB internal SRAM. It has no graphics accelerator, so LVGL renders entirely on the CPU in this project. The included display is 2.2\" and has a resolution of 240x320, driven over SPI.",
-        "shortDescription": "GigaDevice GD32C231C-EVAL entry-level MCU with SPI display",
+        "description": "The GigaDevice GD32C231C-EVAL is an evaluation board based on a 48MHz ARM Cortex-M23 GD32C231C8 microcontroller. This project uses 64KB internal flash and 12KB internal SRAM. LVGL renders to the board's 240x320 TFT display through the SPI interface, using DMA to transfer the rendered pixels to the display.",
+        "shortDescription": "GigaDevice GD32C231C-EVAL entry-level MCU with 240*320 SPI display",
         "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32C231EVAL_LVGL",
         "logos": [
             "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
