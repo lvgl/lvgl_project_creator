@@ -3591,5 +3591,438 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "GigaDevice GD32F470I-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32F470 (Cortex-M4, 240MHz)",
+                "RAM": "192KB internal SRAM, 64KB TCM SRAM, 32768KB external SDRAM",
+                "Flash": "3072KB internal",
+                "GPU": "IPA",
+                "Resolution": "480*272",
+                "Display Size": "4.3 inch",
+                "Interface": "TLI",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "130 px/inch",
+                "Touch Pad": "Resistive touch (SPI)"
+            }
+        },
+        "description": "The GigaDevice GD32F470I-EVAL is an evaluation board based on a 240MHz ARM Cortex-M4 GD32F470IK microcontroller with FPU and DSP instructions. This project uses 3MB internal flash, 192KB internal SRAM, 64KB TCM SRAM, and 32MB external SDRAM. LVGL renders to the board's 480x272 TFT display through the TLI RGB parallel display controller, using the IPA image processing accelerator for graphics operations.",
+        "shortDescription": "GigaDevice GD32F470I-EVAL Cortex-M4 board with 480x272 RGB display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32F470_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32F470I_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32f470i-eval?variant=58578013159756"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GigaDevice GD32F503V-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32F503 (Cortex-M33, 252MHz)",
+                "RAM": "128KB internal SRAM",
+                "Flash": "1024KB internal",
+                "GPU": "None",
+                "Resolution": "240*320",
+                "Display Size": "3.2 inch",
+                "Interface": "8080",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "130 px/inch",
+                "Touch Pad": "Resistive touch (SPI)"
+            }
+        },
+        "description": "The GigaDevice GD32F503V-EVAL is an evaluation board based on a 252MHz ARM Cortex-M33 GD32F503VG microcontroller with FPU and DSP instructions. This project uses 1MB internal flash and 128KB internal SRAM. LVGL runs bare metal and renders to the board's 240x320 TFT display through the EXMC 16-bit parallel bus, using DMA to transfer the rendered frames to the display GRAM.",
+        "shortDescription": "GigaDevice GD32F503V-EVAL Cortex-M33 board with 240x320 parallel display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32F503_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32F503V_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32f503v-eval?variant=58576795599180"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0",
+                        "default": "true"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GigaDevice GD32F527I-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32F527 (Cortex-M33, 200MHz)",
+                "RAM": "512KB internal SRAM, 64KB TCM SRAM, 32768KB external SDRAM",
+                "Flash": "7680KB internal",
+                "GPU": "IPA",
+                "Resolution": "480*272",
+                "Display Size": "4.3 inch",
+                "Interface": "TLI",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "130 px/inch",
+                "Touch Pad": "Resistive touch (SPI)"
+            }
+        },
+        "description": "The GigaDevice GD32F527I-EVAL is an evaluation board based on a 200MHz ARM Cortex-M33 GD32F527 microcontroller. This project uses 7.5MB internal flash, 512KB internal SRAM, 64KB TCM SRAM, and 32MB external SDRAM. LVGL renders to the board's 480x272 TFT display through the TLI RGB parallel display controller, using the IPA image processing accelerator for graphics operations.",
+        "shortDescription": "GigaDevice GD32F527I-EVAL Cortex-M33 board with 480x272 RGB display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32F527_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32F527I_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32f527i-eval?variant=56862408212812"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GigaDevice GD32F5HCR-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32F5HC (Cortex-M33, 200MHz)",
+                "RAM": "320KB internal SRAM",
+                "Flash": "2048KB internal",
+                "GPU": "None",
+                "Resolution": "240*320",
+                "Display Size": "2.2 inch",
+                "Interface": "SPI",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "180 px/inch",
+                "Touch Pad": "None"
+            }
+        },
+        "description": "The GigaDevice GD32F5HCR-EVAL is an evaluation board based on a 200MHz ARM Cortex-M33 GD32F5HCRI microcontroller with FPU and DSP instructions. This project uses 2MB internal flash and 320KB internal SRAM. LVGL renders to the board's 240x320 TFT display through the SPI interface, using DMA to transfer the rendered pixels to the display.",
+        "shortDescription": "GigaDevice GD32F5HCR-EVAL Cortex-M33 board with 240*320 SPI display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32F5HC_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32F5HCR_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32f5hcr-eval?variant=58577539301708"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GigaDevice GD32H759I-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32H759 (Cortex-M7, 600MHz)",
+                "RAM": "1024KB internal SRAM, 32768KB external SDRAM",
+                "Flash": "3840KB internal",
+                "GPU": "IPA",
+                "Resolution": "480*272",
+                "Display Size": "4.3 inch",
+                "Interface": "TLI",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "130 px/inch",
+                "Touch Pad": "Capacitive touch(I2C)"
+            }
+        },
+        "description": "The GigaDevice GD32H759I-EVAL is an evaluation board based on a 600MHz ARM Cortex-M7 GD32H759I microcontroller with FPU and DSP instructions. This project uses 3840KB internal flash, 1024KB internal SRAM, and 32MB external SDRAM. LVGL V8.3 renders to the board's 480x272 TFT display through the TLI RGB parallel display controller, using the IPA image processing accelerator for graphics operations.",
+        "shortDescription": "GigaDevice GD32H759I-EVAL Cortex-M7 board with 480*272 RGB  display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32H759_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32H759I_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32h759i-eval?variant=57778290491724"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GigaDevice GD32VW553H-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32VW553 (RISC-V, 160MHz)",
+                "RAM": "320KB internal SRAM",
+                "Flash": "4096KB internal",
+                "GPU": "None",
+                "Resolution": "320*240",
+                "Display Size": "2.2 inch",
+                "Interface": "SPI",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "180 px/inch",
+                "Touch Pad": "None"
+            }
+        },
+        "description": "The GigaDevice GD32VW553H-EVAL is an evaluation board based on a 160MHz RISC-V GD32VW553HMQ7 microcontroller with Wi-Fi 6 and BLE 5.2 connectivity. This project uses 4MB on-chip flash and 320KB on-chip SRAM. LVGL renders to the board's 320x240 ILI9341 TFT display over SPI1 with DMA-based pixel streaming.",
+        "shortDescription": "GigaDevice GD32VW553H-EVAL RISC-V board with 320x240 SPI display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32VW553_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32VW553H_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32vw553h-eval?variant=53011048759628"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are IAR Embedded Workbench for RISC-V and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "GigaDevice GD32W515P-EVAL",
+        "maintainer": "GigaDevice",
+        "hostOperatingsystem": [
+            "Windows",
+            "Linux",
+            "MacOS"
+        ],
+        "environment": [
+            "MDK",
+            "IAR",
+            "GD32EmbeddedBuilder"
+        ],
+        "hardware": {
+            "chipVendor": "GigaDevice",
+            "manufacturer": "GigaDevice",
+            "specs": {
+                "MCU": "GD32W515 (Cortex-M33, 180MHz)",
+                "RAM": "448KB internal SRAM",
+                "Flash": "2048KB internal",
+                "GPU": "None",
+                "Resolution": "320*240",
+                "Display Size": "2.2 inch",
+                "Interface": "SPI",
+                "Color Depth": "16-bit RGB565",
+                "Technology": "a-Si TFT",
+                "DPI": "180 px/inch",
+                "Touch Pad": "None"
+            }
+        },
+        "description": "The GigaDevice GD32W515P-EVAL is an evaluation board based on a 180MHz ARM Cortex-M33 GD32W515PIQ6 microcontroller with FPU and DSP instructions. This project uses 2MB internal flash and 448KB internal SRAM. LVGL renders to the board's 320x240 TFT display through the SPI interface, using DMA to transfer the rendered pixels to the display.",
+        "shortDescription": "GigaDevice GD32W515P-EVAL Cortex-M33 board with SPI display",
+        "urlToClone": "https://github.com/GigaDevice-GD32-MCU/GD32W515_EVAL_LVGL",
+        "logos": [
+            "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/logo_images/logo.svg"
+        ],
+        "image": "https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/board_images/GD32W515P_EVAL.webp",
+        "buy_now_links": [
+            "https://gigadevice.eu/products/gd32w515p-eval?variant=53011037716812"
+        ],
+        "branches": [
+            "release/v8.3"
+        ],
+        "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
+        "settings": [
+            {
+                "type": "dropdown",
+                "label": "Show performance monitor",
+                "options": [
+                    {
+                        "name": "Yes",
+                        "value": "1",
+                        "default": "true"
+                    },
+                    {
+                        "name": "No",
+                        "value": "0"
+                    }
+                ]
+            }
+        ]
     }
 ]
