@@ -58,3 +58,10 @@ https://raw.githubusercontent.com/lvgl/lv_port_viewe_knob_15_espidf/refs/heads/m
 https://raw.githubusercontent.com/lvgl/lv_port_stm32mp135f_disco_bm/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_port_stm32h7s78-dk/refs/heads/master/manifest.json
 https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32C231_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32F470_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32F503_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32F527_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32F5HC_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32H759_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32VW553_EVAL.json
+https://raw.githubusercontent.com/lvgl/lv_gigadevice/master/manifests/GD32W515_EVAL.json
