@@ -1,0 +1,21 @@
+.github/ISSUE_TEMPLATE/board_request.yml
+  s_1445e46a6fd59e::t_99a4b94a878ec1 1-44
+README.md
+  s_1445e46a6fd59e::t_89b607d3cac7cf 83-98,105
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "86c23f299184095578896ac08ca11ebcb4e74b93",
+  "prompts": {},
+  "sessions": {
+    "s_1445e46a6fd59e": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "57879635-2b12-43a4-b4bc-4f5253ab2048",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Richard Gazdik <richard.gazdik+github@gmail.com>"
+    }
+  }
+}
