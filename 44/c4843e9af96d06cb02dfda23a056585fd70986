@@ -1,0 +1,11 @@
+README.md
+  s_1445e46a6fd59e::t_89b607d3cac7cf 80-95,102
+.github/ISSUE_TEMPLATE/board_request.yml
+  s_1445e46a6fd59e::t_99a4b94a878ec1 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "44c4843e9af96d06cb02dfda23a056585fd70986",
+  "prompts": {}
+}
