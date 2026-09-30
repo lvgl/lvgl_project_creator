@@ -63,7 +63,11 @@ schema_individual = {
         },
         "lvglVersion": {"type": "string"},
         "lastUpdated": {"type": "string"},
-        "uiFolderPath": {"type": "string"},
+        # Relative to the repository root: no absolute, drive, home (~) or ".." paths
+        "uiFolderPath": {
+            "type": "string",
+            "pattern": r"^(?![A-Za-z]:)(?![/\\~])(?!.*(?:^|[/\\])\.\.(?:[/\\]|$)).+$"
+        },
         "settings": {
             "type": "array",
             "items": {
