@@ -1,0 +1,19 @@
+build_manifest_all.py
+  s_b0a336a00a1264::t_975853bb0d50e9 124,155,238
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "5131d780dd34474510fa517dd0d2f4512a574458",
+  "prompts": {},
+  "sessions": {
+    "s_b0a336a00a1264": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76ac118c-db20-4d8b-b9a0-49c807643db4",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Richard Gazdik <richard.gazdik+github@gmail.com>"
+    }
+  }
+}
