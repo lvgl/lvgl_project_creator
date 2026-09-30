@@ -77,13 +77,29 @@ For full examples, check out:
 - [https://github.com/lvgl/lv_port_espressif_esp32-s3-lcd-ev-board/blob/master/manifest.json](https://github.com/lvgl/lv_port_espressif_esp32-s3-lcd-ev-board/blob/master/manifest.json)
 - [https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc/blob/master/manifest.json](https://github.com/lvgl/lv_port_renesas_ek-ra8d1_gcc/blob/master/manifest.json)
 
+## Add your board
+
+Board manufacturers, SDK and RTOS maintainers can add their boards to the Project Creator and to [LVGL Pro](https://lvgl.io/pro). The manifest format is open, and new boards are added with a pull request:
+
+1. Add a `manifest.json` to the root of your board repository's default branch, following the [field reference above](#manifestjson). The repository must be public and clone with `git clone --recurse-submodules`.
+2. For LVGL Pro, the default branch has to use LVGL 9.4 or newer. The build script detects the version from a vendored `lv_version.h` or an `lvgl` submodule; if your project pulls LVGL in another way (component manager, west, etc.), set `lvglVersion` in the manifest.
+3. Optionally set `uiFolderPath` to choose where LVGL Pro creates the UI project in your repository.
+4. Open a pull request that adds the raw URL of your `manifest.json` to [`manifests`](manifests). Logos can be added under [`meta/images`](meta/images) in the same pull request.
+5. The CI validates your manifest and its links on the pull request. After merging, your board appears in the Project Creator and in LVGL Pro within a day.
+
+Please only submit boards you are going to maintain. If you would like us to help support your boards, [contact us](https://lvgl.io/pro/support#contact).
+
+## Request a board
+
+Missing a board? [Open a board request](https://github.com/lvgl/lvgl_project_creator/issues/new?template=board_request.yml), or add a 👍 to an existing one. We use the requests to decide which boards to support next, and we reach out to the board's manufacturer or maintainer.
+
 ## Frequently Asked Questions
 
 ### Will you add more projects?
 Yes, we have started working on adding the LVGL projects from the major chip vendors’ SDKs and RTOS projects. Stay tuned, hundreds of projects will be available soon.
 
 ###  Can I submit my own LVGL project?
-You can’t at this moment. We added projects for which we know that they will be maintained either by us or by a mature project or vendor. However if you would like to see a specific board or project, contact us, and we will also contact the related manufacturer or maintainer.
+Yes, if you are going to maintain it. See [Add your board](#add-your-board). If you would like to see a board that you don't maintain, [request it](#request-a-board) and we will contact the related manufacturer or maintainer.
 
 ### How can I give feedback and ask for help?
 Please use the [Project Creator](https://forum.lvgl.io/c/project-creator) category on our Forum.
