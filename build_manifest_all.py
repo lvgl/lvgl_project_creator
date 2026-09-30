@@ -63,6 +63,7 @@ schema_individual = {
         },
         "lvglVersion": {"type": "string"},
         "lastUpdated": {"type": "string"},
+        "uiFolderPath": {"type": "string"},
         "settings": {
             "type": "array",
             "items": {
