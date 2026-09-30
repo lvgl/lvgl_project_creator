@@ -121,7 +121,7 @@ valid_links = set()
 def ensure_link_valid(link):
     if link in valid_links:
         return
-    response = requests.head(link, headers=headers) # Use the HEAD method to test for existence
+    response = requests.head(link, headers=headers, timeout=30) # Use the HEAD method to test for existence
     response.raise_for_status() # Raise an exception for HTTP errors
     valid_links.add(link) # cache status for duplicates
 
@@ -152,7 +152,7 @@ def validate_json(json_data, schema):
     return True
 
 def github_api(path):
-    response = requests.get(f"https://api.github.com/{path}", headers=headers)
+    response = requests.get(f"https://api.github.com/{path}", headers=headers, timeout=30)
     response.raise_for_status()
     return response.json()
 
@@ -235,7 +235,7 @@ def fetch_json(url):
         # for local testing
         with open(url[len("file://"):]) as f:
             return json.load(f)
-    response = requests.get(url, headers=headers)
+    response = requests.get(url, headers=headers, timeout=30)
     response.raise_for_status()  # Raise an exception for HTTP errors
     return response.json()
 
