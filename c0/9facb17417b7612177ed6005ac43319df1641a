@@ -1,0 +1,21 @@
+README.md
+  s_b0a336a00a1264::t_c9bea621f3d28f 60
+build_manifest_all.py
+  s_b0a336a00a1264::t_c9bea621f3d28f 66-70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "c09facb17417b7612177ed6005ac43319df1641a",
+  "prompts": {},
+  "sessions": {
+    "s_b0a336a00a1264": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "76ac118c-db20-4d8b-b9a0-49c807643db4",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Richard Gazdik <richard.gazdik+github@gmail.com>"
+    }
+  }
+}
