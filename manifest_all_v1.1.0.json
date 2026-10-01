@@ -119,8 +119,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Eclipse Simulator with SDL",
@@ -197,8 +197,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:46Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:07Z"
     },
     {
         "name": "Simulator project for LVGL embedded GUI Library",
@@ -271,8 +271,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:52Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:15Z"
     },
     {
         "name": "Renesas RA8D1-EK",
@@ -2294,7 +2294,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-09-15T00:24:28Z"
+        "lastUpdated": "2026-10-01T00:30:00Z"
     },
     {
         "name": "Alif E7 AI/ML AppKit",
@@ -2441,8 +2441,8 @@
         ],
         "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/f-and-s_picocoremx93/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "GLYN UI2 Starter Kit",
@@ -2479,8 +2479,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/glyn_ui2-starter-kit/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "i.MX 93 Evaluation Kit",
@@ -2517,8 +2517,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/nxp_imx93/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Renesas RZ/G3E-EVKIT",
@@ -2556,8 +2556,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3e-evkit/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Renesas RZ/G3L-EVKIT",
@@ -2594,8 +2594,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3l-evkit/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "STM32MP157F-DK2",
@@ -2631,8 +2631,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp157f-dk/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "STM32MP257F-DK",
@@ -2670,8 +2670,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/stm32mp257f-dk/README.md)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Texas Instruments SK-AM62B-P1",
@@ -2709,8 +2709,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62b-p1/README.md#getting-started)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Texas Instruments TMDS62LEVM",
@@ -2747,8 +2747,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62l/README.md#getting-started)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Texas Instruments SK-AM62P-LP",
@@ -2786,8 +2786,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/texas-instruments_sk-am62p-lp/README.md#getting-started)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Toradex Verdin AM62",
@@ -2826,8 +2826,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_am62/README.md#getting-started)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "Toradex Verdin imx8mm",
@@ -2866,8 +2866,8 @@
         ],
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_imx8m-mini/README.md#getting-started)",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:23:39Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:29:01Z"
     },
     {
         "name": "MIMXRT1170-EVKB",
@@ -2909,8 +2909,8 @@
         ],
         "getStartedInstructions": "Follow the instructions in README.md under \"Run the project\".",
         "settings": [],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:24:34Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:30:12Z"
     },
     {
         "name": "Riverdi STM32U5 Embedded 5\u201d",
@@ -2979,8 +2979,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-07-15T00:26:38Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:30:42Z"
     },
     {
         "name": "Riverdi STM32H7 Embedded 7\u201d",
@@ -3049,8 +3049,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-07-15T00:26:43Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:30:51Z"
     },
     {
         "name": "Riverdi STM32H7 Embedded 10.1\u201d",
@@ -3119,8 +3119,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-07-15T00:26:41Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:30:47Z"
     },
     {
         "name": "Viewe ESP32 S3 Smart Display",
@@ -3307,8 +3307,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-09-15T00:24:36Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:30:20Z"
     },
     {
         "name": "iCOP QEC-PPC-M-090T",
@@ -3416,8 +3416,8 @@
                 ]
             }
         ],
-        "lvglVersion": "9.6.0",
-        "lastUpdated": "2026-07-15T00:26:56Z"
+        "lvglVersion": "10.0.0",
+        "lastUpdated": "2026-10-01T00:31:15Z"
     },
     {
         "name": "Viewe ESP32 S3 Touch Knob Display",
