@@ -1,0 +1,23 @@
+meta/images/glyn/logo.svg
+  s_2bdac481c45b6a::t_3b1bd01c8bc04b 1-4
+meta/images/f_and_s/logo.svg
+  s_2bdac481c45b6a::t_3b1bd01c8bc04b 1-9
+meta/images/gigadevice/logo.svg
+  s_2bdac481c45b6a::t_3b1bd01c8bc04b 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "a37aae12fe6845d9251eeaa53687a1262a39b2b9",
+  "prompts": {},
+  "sessions": {
+    "s_2bdac481c45b6a": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "95eea180-b123-4af2-b12c-285931f5ddbd",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Richard Gazdik <richard.gazdik+github@gmail.com>"
+    }
+  }
+}
