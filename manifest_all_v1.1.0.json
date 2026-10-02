@@ -120,7 +120,7 @@
             }
         ],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Eclipse Simulator with SDL",
@@ -2442,7 +2442,7 @@
         "getStartedInstructions": "Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/f-and-s_picocoremx93/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "GLYN UI2 Starter Kit",
@@ -2480,7 +2480,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/glyn_ui2-starter-kit/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "i.MX 93 Evaluation Kit",
@@ -2518,7 +2518,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/nxp_imx93/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Renesas RZ/G3E-EVKIT",
@@ -2557,7 +2557,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3e-evkit/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Renesas RZ/G3L-EVKIT",
@@ -2595,7 +2595,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/renesas_rz-g3l-evkit/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "STM32MP157F-DK2",
@@ -2632,7 +2632,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://raw.githubusercontent.com/lvgl/lv_port_linux/master/boards/stm32mp157f-dk/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "STM32MP257F-DK",
@@ -2671,7 +2671,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/stm32mp257f-dk/README.md)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Texas Instruments SK-AM62B-P1",
@@ -2710,7 +2710,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62b-p1/README.md#getting-started)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Texas Instruments TMDS62LEVM",
@@ -2748,7 +2748,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/tree/master/boards/texas-instruments_sk-am62l/README.md#getting-started)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Texas Instruments SK-AM62P-LP",
@@ -2787,7 +2787,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/texas-instruments_sk-am62p-lp/README.md#getting-started)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Toradex Verdin AM62",
@@ -2827,7 +2827,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_am62/README.md#getting-started)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "Toradex Verdin imx8mm",
@@ -2867,7 +2867,7 @@
         "getStartedInstructions": "1. Open the project folder and update the submodules: `git submodule update --init --recursive` \n2. Follow the guide in the [README](https://github.com/lvgl/lv_port_linux/blob/master/boards/toradex-verdin_imx8m-mini/README.md#getting-started)",
         "settings": [],
         "lvglVersion": "10.0.0",
-        "lastUpdated": "2026-10-01T00:29:01Z"
+        "lastUpdated": "2026-10-02T09:14:21Z"
     },
     {
         "name": "MIMXRT1170-EVKB",
