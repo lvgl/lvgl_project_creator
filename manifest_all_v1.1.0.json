@@ -747,7 +747,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "ESP32-S3-Korvo-2",
@@ -830,7 +830,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "ESP32-S3-LCD-EV-Board",
@@ -935,7 +935,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "ESP32-S3-BOX-3",
@@ -1018,7 +1018,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "ESP32-BOX",
@@ -1101,7 +1101,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "ESP32-BOX-Lite",
@@ -1184,7 +1184,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "M5SDial",
@@ -1267,7 +1267,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "M5Stack CoreS3",
@@ -1350,7 +1350,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-03T11:38:16Z"
+        "lastUpdated": "2026-10-22T16:17:09Z"
     },
     {
         "name": "NuttX Simulator",
