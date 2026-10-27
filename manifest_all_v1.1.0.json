@@ -3804,7 +3804,8 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-10-26T03:26:56Z"
+        "lvglVersion": "8.3.11",
+        "lastUpdated": "2026-10-27T02:39:31Z"
     },
     {
         "name": "GigaDevice GD32F527I-EVAL",
