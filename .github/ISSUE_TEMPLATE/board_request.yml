@@ -1,0 +1,44 @@
+name: Board request
+description: Ask for a board to be added to the Project Creator and LVGL Pro
+title: "Board request: "
+labels: ["board request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for telling us which board you would like to use! We collect these requests to decide which boards to support next, and we reach out to the board's manufacturer or maintainer.
+
+        Before opening a new request, please search the existing ones and add a 👍 to the board you need.
+        Are you the manufacturer? See [Add your board](https://github.com/lvgl/lvgl_project_creator#add-your-board).
+  - type: input
+    id: board
+    attributes:
+      label: Board
+      description: Full name of the board or kit.
+      placeholder: e.g. STM32F429I-DISC1
+    validations:
+      required: true
+  - type: input
+    id: manufacturer
+    attributes:
+      label: Manufacturer
+      placeholder: e.g. STMicroelectronics
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Product page
+      description: A link to the board's product page or datasheet.
+      placeholder: https://
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: The SDK, RTOS or IDE you would like to use with it.
+      placeholder: e.g. STM32CubeIDE, Zephyr, ESP-IDF
+  - type: textarea
+    id: details
+    attributes:
+      label: What are you building?
+      description: Optional, but it helps us prioritize.
