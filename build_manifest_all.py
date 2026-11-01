@@ -198,6 +198,27 @@ def detect_lvgl_version(repo, branch):
     return None
 
 repo_info_cache = {}
+latest_lvgl_release = {}
+
+# The newest released LVGL version (e.g. "9.6.0") from the lvgl/lvgl releases, or None if unavailable.
+def get_latest_lvgl_release():
+    if "version" not in latest_lvgl_release:
+        version = None
+        try:
+            tag = github_api("repos/lvgl/lvgl/releases/latest")["tag_name"]
+            match = re.fullmatch(r"v?(\d+)\.(\d+)\.(\d+)", tag.strip())
+            if match is not None:
+                version = ".".join(match.groups())
+            else:
+                print(f"warning: unexpected LVGL release tag {tag}")
+        except (requests.exceptions.RequestException, KeyError, ValueError) as e:
+            print(f"warning: could not get the latest LVGL release: {e}")
+        latest_lvgl_release["version"] = version
+    return latest_lvgl_release["version"]
+
+def version_tuple(version):
+    match = re.fullmatch(r"(\d+)\.(\d+)(?:\.(\d+))?", version)
+    return tuple(int(part or 0) for part in match.groups()) if match is not None else None
 
 # Returns (lvglVersion, lastUpdated) of the default branch of a GitHub repo. Either can be None.
 def get_repo_info(url_to_clone, detect_version):
@@ -226,12 +247,26 @@ def get_repo_info(url_to_clone, detect_version):
     return lvgl_version, last_updated
 
 def add_repo_info(json_data):
+    declared = json_data.get("lvglVersion")
+    if isinstance(declared, str) and declared.strip().lower() == "latest":
+        # Repositories that follow LVGL releases (e.g. updated by a script) get the newest release version.
+        latest = get_latest_lvgl_release()
+        if latest is not None:
+            json_data["lvglVersion"] = latest
     detect_version = "lvglVersion" not in json_data
     lvgl_version, last_updated = get_repo_info(json_data["urlToClone"], detect_version)
     if detect_version and lvgl_version is not None:
         json_data["lvglVersion"] = lvgl_version
     if last_updated is not None:
         json_data["lastUpdated"] = last_updated
+
+    # Boards should track released LVGL; a version ahead of the latest release is a development build.
+    version = json_data.get("lvglVersion")
+    latest = get_latest_lvgl_release()
+    if isinstance(version, str) and latest is not None:
+        current, released = version_tuple(version), version_tuple(latest)
+        if current is not None and released is not None and current > released:
+            print(f"warning: {json_data['name']} uses LVGL {version}, newer than the latest release {latest} (development version)")
 
 # Function to fetch JSON content from a URL
 def fetch_json(url):
