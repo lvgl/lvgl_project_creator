@@ -3931,7 +3931,8 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-04T09:14:14Z"
+        "lvglVersion": "9.6.0",
+        "lastUpdated": "2026-11-06T09:37:06Z"
     },
     {
         "name": "GigaDevice GD32H759I-EVAL",
