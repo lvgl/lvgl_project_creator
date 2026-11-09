@@ -3995,7 +3995,8 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-28T11:56:30Z"
+        "lvglVersion": "8.3.11",
+        "lastUpdated": "2026-11-09T08:48:25Z"
     },
     {
         "name": "GigaDevice GD32VW553H-EVAL",
