@@ -3868,8 +3868,8 @@
                 ]
             }
         ],
-        "lvglVersion": "8.3.11",
-        "lastUpdated": "2026-11-10T07:40:43Z"
+        "lvglVersion": "9.6.0",
+        "lastUpdated": "2026-11-11T03:33:32Z"
     },
     {
         "name": "GigaDevice GD32F5HCR-EVAL",
@@ -4122,6 +4122,7 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-17T02:45:56Z"
+        "lvglVersion": "8.3.11",
+        "lastUpdated": "2026-11-11T03:41:20Z"
     }
 ]
