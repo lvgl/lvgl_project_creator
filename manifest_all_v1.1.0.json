@@ -3741,7 +3741,8 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-08-27T09:29:40Z"
+        "lvglVersion": "8.3.11",
+        "lastUpdated": "2026-11-12T12:49:04Z"
     },
     {
         "name": "GigaDevice GD32F503V-EVAL",
