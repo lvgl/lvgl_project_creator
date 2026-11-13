@@ -3678,7 +3678,8 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-09-16T03:08:33Z"
+        "lvglVersion": "8.3.11",
+        "lastUpdated": "2026-11-13T07:47:24Z"
     },
     {
         "name": "GigaDevice GD32F470I-EVAL",
@@ -3741,8 +3742,8 @@
                 ]
             }
         ],
-        "lvglVersion": "8.3.11",
-        "lastUpdated": "2026-11-12T12:49:04Z"
+        "lvglVersion": "9.6.0",
+        "lastUpdated": "2026-11-13T07:45:55Z"
     },
     {
         "name": "GigaDevice GD32F503V-EVAL",
@@ -4060,7 +4061,8 @@
                 ]
             }
         ],
-        "lastUpdated": "2026-09-03T03:39:20Z"
+        "lvglVersion": "9.6.0",
+        "lastUpdated": "2026-11-13T07:46:47Z"
     },
     {
         "name": "GigaDevice GD32W515P-EVAL",
