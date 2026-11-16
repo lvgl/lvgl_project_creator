@@ -3722,7 +3722,8 @@
             "https://gigadevice.eu/products/gd32f470i-eval?variant=58578013159756"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
@@ -3786,7 +3787,8 @@
             "https://gigadevice.eu/products/gd32f503v-eval?variant=58576795599180"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
@@ -3850,7 +3852,8 @@
             "https://gigadevice.eu/products/gd32f527i-eval?variant=56862408212812"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
@@ -3914,7 +3917,8 @@
             "https://gigadevice.eu/products/gd32f5hcr-eval?variant=58577539301708"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
@@ -3978,7 +3982,8 @@
             "https://gigadevice.eu/products/gd32h759i-eval?variant=57778290491724"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
@@ -4041,7 +4046,8 @@
             "https://gigadevice.eu/products/gd32vw553h-eval?variant=53011048759628"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are IAR Embedded Workbench for RISC-V and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
@@ -4105,7 +4111,8 @@
             "https://gigadevice.eu/products/gd32w515p-eval?variant=53011037716812"
         ],
         "branches": [
-            "release/v8.3"
+            "release/v8.3",
+            "release/v9.6"
         ],
         "getStartedInstructions": "1. Install an IDE. The supported IDEs are MDK, IAR and GD32EmbeddedBuilder. 2. Clone the source code from the corresponding Git repository. 3. Build the code with the IDE and download it to the development board.",
         "settings": [
